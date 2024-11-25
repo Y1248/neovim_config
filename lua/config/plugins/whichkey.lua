@@ -1,4 +1,5 @@
 return {
+  --[[
   "folke/which-key.nvim",
   event = "VeryLazy", -- lazy load this plugin
   init = function()
@@ -10,4 +11,5 @@ return {
     -- or learve it empty to use the default settings
     -- refer to the configuration section below
   }
+  --]]
 }
