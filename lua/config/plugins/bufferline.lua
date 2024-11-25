@@ -5,7 +5,7 @@ return {
   opts = {
     options = {
       -- mode = 'tabs',
-      separator_style = 'slope',
+      separator_style = 'thin',
     }
   },
 }
