@@ -15,7 +15,6 @@ return {
         },
         ignore_focus = {},
         always_divide_middle = true,
-        padding = 0,
         always_show_tabline = true,
         globalstatus = false,
         refresh = {
@@ -26,11 +25,11 @@ return {
       },
       sections = {
         lualine_a = {'mode'},
-        lualine_b = {'branch', 'diff', 'diagnostics'},
+        lualine_b = { {'branch', padding = 0}, 'diff', 'diagnostics'},
         lualine_c = {'filename'},
         -- lualine_x = {'encoding', 'fileformat', 'filetype'},
         lualine_x = {'filetype'},
-        lualine_y = {'progress'},
+        lualine_y = { {'progress', padding = 0} },
         -- lualine_z = {'location'}
         lualine_z = { }
       },
