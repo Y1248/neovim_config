@@ -14,6 +14,17 @@ return {
     bufferline.setup({
       options = {
         separator_style = 'thin',
+        indicator = {
+          -- icon = '',
+          style = 'icon',
+        },
+        tab_size = 10,
+        -- numbers = 'buffer_id',
+        buffer_close_icon = '󰅖',
+        modified_icon = '●',
+        close_icon = '',
+        left_trunc_marker = '',
+        right_trunc_marker = '',
       },
     })
 
