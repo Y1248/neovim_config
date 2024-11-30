@@ -3,13 +3,9 @@ local keymap = vim.keymap
 
 keymap.set('n', '<leader>w', '<cmd>w<CR>', {desc = 'Save file'})
 
--- Buffer management
-keymap.set('n', '<C-h>', '<cmd>BufferLineCyclePrev<CR>', {desc = 'Go to the previous buffer'})
-keymap.set('n', '<C-l>', '<cmd>BufferLineCycleNext<CR>', {desc = 'Go to the next buffer'})
-keymap.set('n', '<leader>br', '<cmd>BufferLineCloseRight<CR>', {desc = 'Close right buffers'})
-keymap.set('n', '<leader>bl', '<cmd>BufferLineCloseLeft<CR>', {desc = 'Close left buffers'})
-keymap.set('n', '<leader>bo', '<cmd>BufferLineCloseOthers<CR>', {desc = 'Close other buffers'})
+-- Basic buffer management
 keymap.set('n', '<leader>bd', '<cmd>bdelete<CR>', {desc = 'Close current buffer'})
+-- Addtional buffer management: check bufferline.lua file
 
 -- Window Management
 keymap.set('n', '<leader>sv', '<C-w>v', {desc = 'Split window vertically'})
