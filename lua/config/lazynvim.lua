@@ -22,4 +22,7 @@ if not status then
 end
 
 -- Setup lazy.nvim
-lazy.setup('config.plugins')
+lazy.setup({
+  {import = 'config.plugins' },
+  {import = 'config.plugins.lsp'}
+})
