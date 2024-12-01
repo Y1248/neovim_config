@@ -6,7 +6,7 @@ return {
     lualine.setup {
       options = {
         icons_enabled = true,
-        theme = 'dracula',
+        -- theme = 'dracula',
         component_separators = { left = '', right = ''},
         section_separators = { left = '', right = ''},
         disabled_filetypes = {
@@ -26,15 +26,17 @@ return {
       sections = {
         lualine_a = { 'mode' },
         lualine_b = {
-          { 'branch', icon = '', padding = 1 },
+          { 'branch', icon = '' },
           {
             'diff',
-            fmt = function(res)
-              return res .. ' '
-            end,
-            padding = 0
+            -- fmt = function(res) return res .. ' ' end,
+            -- padding = 0
           },
-          { 'diagnostics' }
+          {
+            'diagnostics',
+            -- fmt = function(res) return res .. ' ' end,
+            -- padding = 0
+          }
         },
         lualine_c = { 'filename' },
         -- lualine_x = {'encoding', 'fileformat', 'filetype'},
