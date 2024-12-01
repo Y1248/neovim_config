@@ -10,7 +10,7 @@ return {
   end
   --]]
 
-  --[[
+  ---[[
   'Mofiqul/vscode.nvim',
   priority = 1000,
   config = function()
