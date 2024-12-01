@@ -22,4 +22,5 @@ keymap.set('n', '<leader>tf', '<cmd>tabnew %<CR>', {desc = 'Open current buffer 
 
 -- Explore management
 keymap.set('n', '<leader>E', '<cmd>Explore<CR>', {desc = 'Open Explore window'})
+keymap.set('n', '<leader>L', '<cmd>Lexplore<CR>', {desc = 'Open Explore window'})
 
