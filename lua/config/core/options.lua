@@ -1,6 +1,6 @@
-vim.cmd('let g:netrw_liststyle = 3')
-vim.cmd('let g:netrw_banner = 0')
-vim.cmd('let g:netrw_winsize = 30')
+-- vim.cmd('let g:netrw_liststyle = 3')
+-- vim.cmd('let g:netrw_banner = 0')
+-- vim.cmd('let g:netrw_winsize = 30')
 
 vim.opt.clipboard:append('unnamedplus') -- use system clipboard as default register
 
