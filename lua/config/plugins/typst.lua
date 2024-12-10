@@ -1,4 +1,5 @@
 return {
+  --[[
   { -- Quick preview for typst files
     'chomosuke/typst-preview.nvim',
     ft = 'typst',
@@ -11,4 +12,5 @@ return {
     ft = 'typst',
     -- event = { 'VeryLazy', 'BufReadPre', 'BufNewFile' },
   },
+  --]]
 }
