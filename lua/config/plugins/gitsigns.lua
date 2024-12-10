@@ -1,8 +1,8 @@
 return {
   'lewis6991/gitsigns.nvim',
-  event = {'BufReadPre', 'BufNewFile'},
+  event = { 'BufReadPre', 'BufNewFile' },
   config = function()
-    gitsigns = require('gitsigns')
+    local gitsigns = require('gitsigns')
     gitsigns.setup({
       signcolumn = false, -- Toggle with `:Gitsigns toggle_signs`
       numhl = true, -- Toggle with `:Gitsigns toggle_numhl`

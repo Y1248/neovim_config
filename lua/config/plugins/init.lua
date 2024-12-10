@@ -1,5 +1,9 @@
 return {
-  'nvim-lua/plenary.nvim',
+  {
+    'nvim-lua/plenary.nvim',
+    lazy = true,
+    event = { 'BufReadPre', 'BufNewFile' },
+  },
   {
     'nvim-tree/nvim-web-devicons',
     event = { 'BufReadPre', 'BufNewFile' },
@@ -11,7 +15,7 @@ return {
           ['typ'] = {
             icon = '',
             color = '#2D92BC',
-            name = 'typ'
+            name = 'typst'
           }
         },
       }
