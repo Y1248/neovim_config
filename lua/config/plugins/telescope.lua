@@ -1,5 +1,6 @@
 return {
   "nvim-telescope/telescope.nvim",
+  -- dependencies = { 'nvim-lua/plenary.nvim', },
   keys = {
     { '<leader>ff', '<cmd>Telescope find_files<cr>',  desc = 'Fuzzy find files cwd' },
     { '<leader>fr', '<cmd>Telescope oldfiles<cr>',  desc = 'Fuzzy find recent files' },
@@ -8,11 +9,6 @@ return {
     { '<leader>ft', '<cmd>TodoTelescope<cr>',  desc = 'Find todos' },
   },
   branch = "0.1.x",
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-    -- { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-    "nvim-tree/nvim-web-devicons",
-  },
   config = function()
     local telescope = require("telescope")
     local actions = require("telescope.actions")
