@@ -6,6 +6,7 @@ return {
   },
   {
     'nvim-tree/nvim-web-devicons',
+    lazy = true,
     event = { 'BufReadPre', 'BufNewFile' },
     config = function()
       local devicon = require('nvim-web-devicons')
