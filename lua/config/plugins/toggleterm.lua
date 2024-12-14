@@ -8,5 +8,6 @@ return {
     require('toggleterm').setup({
       shell = 'pwsh.exe'
     })
+    vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], { silent = true })
   end
 }
