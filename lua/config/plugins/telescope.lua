@@ -3,7 +3,7 @@ return {
   -- dependencies = { 'nvim-lua/plenary.nvim', },
   keys = {
     { '<leader>ff', '<cmd>Telescope find_files<cr>',  desc = 'Fuzzy find files cwd' },
-    { '<leader>fr', '<cmd>Telescope oldfiles<cr>',  desc = 'Fuzzy find recent files' },
+    { '<leader>fr', '<cmd>Telescope resume<cr>',  desc = 'Resume last search result' },
     { '<leader>fs', '<cmd>Telescope live_grep<cr>',  desc = 'Find string' },
     { '<leader>fc', '<cmd>Telescope grep_string<cr>',  desc = 'Find string under cursor' },
     { '<leader>ft', '<cmd>TodoTelescope<cr>',  desc = 'Find todos' },
