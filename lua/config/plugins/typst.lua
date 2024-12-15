@@ -10,6 +10,7 @@ return {
       require('typst-preview').setup({
         dependencies_bin = {
           ['tinymist'] = 'tinymist-win32-x64.exe',
+          ['websocat'] = 'websocat.x86_64-pc-windows-gnu.exe',
         }
       })
     end
