@@ -1,5 +1,6 @@
 return {
   'onsails/lspkind.nvim',
+  event = { 'InsertEnter' },
   config = function()
     require('lspkind').setup({
       mode = 'symbol_text',
