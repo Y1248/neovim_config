@@ -16,7 +16,7 @@ return {
         separator_style = 'thin',
         always_show_bufferline = false,
         indicator = {
-          -- icon = '',
+          icon = '',
           style = 'icon',
         },
         tab_size = 10,
