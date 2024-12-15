@@ -3,7 +3,6 @@ local keymap = vim.keymap
 
 keymap.set('n', '<leader>w', '<cmd>w<CR>', {desc = 'Save file'})
 keymap.set('i', 'jf', '<ESC>', { silent = true })
-keymap.set('v', 'jf', '<ESC>', { silent = true })
 
 -- Basic buffer management
 keymap.set('n', '<leader>bb', ':buffers<cr>:b<space>', { silent = true })
