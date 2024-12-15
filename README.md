@@ -21,7 +21,7 @@
 - [MinGW-w64](https://www.mingw-w64.org/downloads/)：为了treesitter的一些编译。
 - [clangd](https://github.com/clangd/clangd)：clangd language server。
 - [ripgrep](https://github.com/BurntSushi/ripgrep)：搜索工具。
-- typst相关：[Tinymist](https://github.com/Myriad-Dreamin/tinymist)、[typst](https://github.com/typst/typst)、[websocat](https://github.com/vi/websocat)。。
+- typst相关：[Tinymist](https://github.com/Myriad-Dreamin/tinymist)、[typst](https://github.com/typst/typst)、[websocat](https://github.com/vi/websocat)。
 - [Node.js](https://nodejs.org/en)：为了用其中的npm下载一些language server。
 
 # 配置指南
