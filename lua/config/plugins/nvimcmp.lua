@@ -12,33 +12,34 @@ return {
   },
   config = function()
     local cmp = require('cmp')
-    local kind_icons = {
-      Text = "󰉿",
-      Method = "󰆧",
-      Function = "󰊕",
-      Constructor = "",
-      Field = "󰜢",
-      Variable = "󰀫",
-      Class = "󰠱",
-      Interface = "",
-      Module = "",
-      Property = "󰜢",
-      Unit = "󰑭",
-      Value = "󰎠",
-      Enum = "",
-      Keyword = "󰌋",
-      Snippet = "",
-      Color = "󰏘",
-      File = "󰈙",
-      Reference = "󰈇",
-      Folder = "󰉋",
-      EnumMember = "",
-      Constant = "󰏿",
-      Struct = "󰙅",
-      Event = "",
-      Operator = "󰆕",
-      TypeParameter = "",
-    }
+    local lspkind = require('lspkind')
+    -- local kind_icons = {
+    --   Text = "󰉿",
+    --   Method = "󰆧",
+    --   Function = "󰊕",
+    --   Constructor = "",
+    --   Field = "󰜢",
+    --   Variable = "󰀫",
+    --   Class = "󰠱",
+    --   Interface = "",
+    --   Module = "",
+    --   Property = "󰜢",
+    --   Unit = "󰑭",
+    --   Value = "󰎠",
+    --   Enum = "",
+    --   Keyword = "󰌋",
+    --   Snippet = "",
+    --   Color = "󰏘",
+    --   File = "󰈙",
+    --   Reference = "󰈇",
+    --   Folder = "󰉋",
+    --   EnumMember = "",
+    --   Constant = "󰏿",
+    --   Struct = "󰙅",
+    --   Event = "",
+    --   Operator = "󰆕",
+    --   TypeParameter = "",
+    -- }
 
     cmp.setup({
       window = {
@@ -65,19 +66,32 @@ return {
       view = {
       },
       formatting = {
-        format = function(entry, vim_item)
-          -- Kind icons
-          vim_item.kind = string.format('%s', kind_icons[vim_item.kind]) -- This concatenates the icons
-          -- Source
-          vim_item.menu = ({
-            -- buffer = '[Buffer]',
-            -- nvim_lsp = '[LSP]',
-            -- luasnip = '[LuaSnip]',
-            -- nvim_lua = '[Lua]',
-            -- latex_symbols = '[LaTeX]',
-          })[entry.source.name]
-          return vim_item
-        end
+      --   format = function(entry, vim_item)
+      --     -- Kind icons
+      --     vim_item.kind = string.format('%s', kind_icons[vim_item.kind]) -- This concatenates the icons
+      --     -- Source
+      --     vim_item.menu = ({
+      --       -- buffer = '[Buffer]',
+      --       -- nvim_lsp = '[LSP]',
+      --       -- luasnip = '[LuaSnip]',
+      --       -- nvim_lua = '[Lua]',
+      --       -- latex_symbols = '[LaTeX]',
+      --     })[entry.source.name]
+      --     return vim_item
+      --   end
+
+        format = lspkind.cmp_format({
+          mode = 'symbol',
+          maxwidth = {
+            menu = 35,
+            abbr = 35,
+          },
+          ellipsis_char = '...',
+          show_labelDetails = true,
+          -- before = function(entry, vim_item)
+          --   return vim_item
+          -- end
+        })
       },
     })
 
