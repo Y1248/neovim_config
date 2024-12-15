@@ -17,6 +17,11 @@ return {
             icon = '',
             color = '#2D92BC',
             name = 'typst'
+          },
+          ['pdf'] = {
+            icon = '',
+            color = '#2B7CD3',
+            name = 'pdf',
           }
         },
       }
