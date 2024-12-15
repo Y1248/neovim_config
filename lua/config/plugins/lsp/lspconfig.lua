@@ -1,5 +1,5 @@
 return {
-  --[[
+  ---[[
   "neovim/nvim-lspconfig",
   event = { 'BufReadPre', 'BufNewFile' },
   dependencies = {
@@ -8,6 +8,8 @@ return {
     { "folke/neodev.nvim", opts = {} },
     {
       "williamboman/mason.nvim",
+      cmd = 'Mason',
+      -- event = { 'BufReadPre', 'BufNewFile', },
       dependencies = {
         "williamboman/mason-lspconfig.nvim",
       },
@@ -113,6 +115,10 @@ return {
     -- lspconfig.clangd.setup({
     --   cmd = {'clangd.exe'},
     -- })
+
+    lspconfig.tinymist.setup({
+      offset_encoding = "utf-8",
+    })
 
     mason_lspconfig.setup_handlers({
       -- default handler for installed servers
