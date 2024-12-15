@@ -24,7 +24,7 @@ There are several dependencies you need to installed before setup NeoVIM:
 - [clangd](https://github.com/clangd/clangd): clangd language server.
 - [ripgrep](https://github.com/BurntSushi/ripgrep): a powerful for fuzzy search.
 - typst: [Tinymist](https://github.com/Myriad-Dreamin/tinymist), [typst](https://github.com/typst/typst), [websocat](https://github.com/vi/websocat).
-- [Node.js](https://nodejs.org/en): mainly for the `npm` tool inside for downloading some language server.
+- [Node.js](https://nodejs.org/en): mainly for the `npm` tool inside for downloading some language servers.
 
 # Setup This Config
 
