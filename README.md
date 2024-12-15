@@ -1,32 +1,34 @@
 # Introduction
 
-这是我的个人NeoVIM配置。
+> You can find different versions in EN(here) / [ZH](./README-ZH.md).
 
-# 功能概述
+This is my personal configuration of NeoVIM, mainly using in Windows operating system.
 
-这个配置中包括的功能有：
-- 基础options和基础keymaps。
-- 插件管理：Lazy插件管理器。
-- 输入：自动括号补全、自动注释、自动输入补全。
-- 外观：Bufferline、主题、状态栏插件、treesitter。
-- LSP：自动下载Language Server、语言层面的补全、错误诊断。
-- 版本控制：Gitsigns。
-- 其他：文件树、自动补全、模糊搜索、终端管理。
+# Outline of Configuration
 
-# 依赖项
+Functions in this configurations includs:
+- Basic options and keymaps.
+- Plugin management: Lazy.
+- Input enhancing: auto bracket pair, auto comment, auto completion.
+- Appearance: bufferline, colortheme, statusline enhancing, treesitter.
+- LSP: language server auto downloading, auto completion of languages, error diagnosis.
+- Version controling: gitsigns.
+- Other: file tree, fuzzy finding, terminal management.
 
-需要事先安装的依赖项有：
-- [WezTerm](https://github.com/wez/wezterm)：好用的终端客户端、可以用它来作为NeoVIM的客户端。
-- [Git](https://git-scm.com/downloads)：版本管理。
-- [MinGW-w64](https://www.mingw-w64.org/downloads/)：为了treesitter的一些编译。
-- [clangd](https://github.com/clangd/clangd)：clangd language server。
-- [ripgrep](https://github.com/BurntSushi/ripgrep)：搜索工具。
-- typst相关：[Tinymist](https://github.com/Myriad-Dreamin/tinymist)、[typst](https://github.com/typst/typst)、[websocat](https://github.com/vi/websocat)。
-- [Node.js](https://nodejs.org/en)：为了用其中的npm下载一些language server。
+# Dependencies
 
-# 配置指南
+There are several dependencies you need to installed before setup NeoVIM:
+- [WezTerm](https://github.com/wez/wezterm): a powerful terminal client. I use it for the client of NeoVIM. My personal configuration is [here](.wezterm.lua).
+- [Git](https://git-scm.com/downloads): for version control and auto downloading of plugins.
+- [MinGW-w64](https://www.mingw-w64.org/downloads/): for some compiling work of treesitter.
+- [clangd](https://github.com/clangd/clangd): clangd language server.
+- [ripgrep](https://github.com/BurntSushi/ripgrep): a powerful for fuzzy search.
+- typst: [Tinymist](https://github.com/Myriad-Dreamin/tinymist), [typst](https://github.com/typst/typst), [websocat](https://github.com/vi/websocat).
+- [Node.js](https://nodejs.org/en): mainly for the `npm` tool inside for downloading some language server.
 
-使用此配置的方式为：
-- 安装NeoVIM并添加到环境变量。
-- 安装上面的所有依赖项并配置相关的环境变量。
-- 下载[我的配置](https://github.com/htun1248/neovim_config)，打开NeoVIM，等待插件自动下载好即可。
+# Setup This Config
+
+The method for using this configuration is:
+- Install NeoVIM and configure its path to environmental variables.
+- Install the former presented denpendencies and configure their path to environmental variables.
+- Download this repository to `~\AppData\Local\nvim` and open NeoVIM. Then waitting for the completion of plugins' auto downloading.
