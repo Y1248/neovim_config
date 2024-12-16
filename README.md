@@ -22,7 +22,7 @@ There are several dependencies you need to installed before setup NeoVIM:
 - [Git](https://git-scm.com/downloads): for version control and auto downloading of plugins.
 - [MinGW-w64](https://www.mingw-w64.org/downloads/): for some compiling work of treesitter.
 - [clangd](https://github.com/clangd/clangd): clangd language server.
-- [ripgrep](https://github.com/BurntSushi/ripgrep): a powerful for fuzzy search.
+- [ripgrep](https://github.com/BurntSushi/ripgrep): a powerful tool for fuzzy search.
 - typst: [Tinymist](https://github.com/Myriad-Dreamin/tinymist), [typst](https://github.com/typst/typst), [websocat](https://github.com/vi/websocat).
 - [Node.js](https://nodejs.org/en): mainly for the `npm` tool inside for downloading some language servers.
 
