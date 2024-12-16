@@ -6,8 +6,8 @@ keymap.set('i', 'jf', '<ESC>', { silent = true })
 
 -- Basic buffer management
 keymap.set('n', '<leader>bb', ':buffers<cr>:b<space>', { silent = true })
-keymap.set('n', '<leader>bd', '<cmd>bdelete<CR>', {desc = 'Close current buffer'})
-keymap.set('n', '<leader>q', '<cmd>bdelete<CR>', {desc = 'Close current buffer'})
+keymap.set('n', '<leader>bd', '<cmd>bdelete!<CR>', {desc = 'Close current buffer'})
+keymap.set('n', '<leader>q', '<cmd>bdelete!<CR>', {desc = 'Close current buffer'})
 -- Addtional buffer management: check bufferline.lua file
 
 -- Window Management
