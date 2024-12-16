@@ -18,7 +18,7 @@
 # 依赖项
 
 需要事先安装的依赖项有：
-- [WezTerm](https://github.com/wez/wezterm)：好用的终端客户端、我主要用它来作为NeoVIM的客户端。我的WezTerm的个人配置为[here](.wezterm.lua)。
+- [WezTerm](https://github.com/wez/wezterm)：好用的终端客户端、我主要用它来作为NeoVIM的客户端。我的WezTerm的个人配置为[here](./other_configs/.wezterm.lua)。
 - [Git](https://git-scm.com/downloads)：版本管理和自动下载插件。
 - [MinGW-w64](https://www.mingw-w64.org/downloads/)：为了treesitter的一些编译工作。
 - [clangd](https://github.com/clangd/clangd)：clangd language server。

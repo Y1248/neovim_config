@@ -18,7 +18,7 @@ Functions in this configurations includs:
 # Dependencies
 
 There are several dependencies you need to installed before setup NeoVIM:
-- [WezTerm](https://github.com/wez/wezterm): a powerful terminal client. I use it for the client of NeoVIM. My personal configuration is [here](.wezterm.lua).
+- [WezTerm](https://github.com/wez/wezterm): a powerful terminal client. I use it for the client of NeoVIM. My personal configuration is [here](./other_configs/.wezterm.lua).
 - [Git](https://git-scm.com/downloads): for version control and auto downloading of plugins.
 - [MinGW-w64](https://www.mingw-w64.org/downloads/): for some compiling work of treesitter.
 - [clangd](https://github.com/clangd/clangd): clangd language server.
