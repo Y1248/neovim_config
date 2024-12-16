@@ -113,10 +113,11 @@ return {
     -- end
 
     lspconfig.clangd.setup({
-      cmd = {'clangd.exe'},
+      cmd = { 'clangd.exe' },
     })
 
     lspconfig.tinymist.setup({
+      cmd = { 'tinymist.exe' },
       offset_encoding = "utf-8",
     })
 
