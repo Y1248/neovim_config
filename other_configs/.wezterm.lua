@@ -12,7 +12,7 @@ config.initial_rows = 28
 config.initial_cols = 85
 config.enable_scroll_bar = false
 config.window_frame = {
-  font = wezterm.font{family = 'Courier New', weight = 'Regular'},
+  font = wezterm.font{family = 'Lucida Console', weight = 'Regular'},
 }
 
 -- Set default program
@@ -21,7 +21,14 @@ config.default_prog = { 'C:\\Program Files\\PowerShell\\7\\pwsh.exe' }
 -- Font
 config.line_height = 0.8
 config.font = wezterm.font('SauceCodePro Nerd Font', { weight = 'Regular' })
--- config.font = wezterm.font('FiraCode Nerd Font', { weight = 'Regular' })
--- config.font = wezterm.font('JetBrainsMonoNL Nerd Font')
+
+-- Keys
+config.keys = {
+  {
+    key = 'F11',
+    mods = 'SHIFT|CTRL',
+    action = wezterm.action.ToggleFullScreen,
+  },
+}
 
 return config
