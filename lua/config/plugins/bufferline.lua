@@ -1,14 +1,6 @@
 return {
   'akinsho/bufferline.nvim',
   event = { 'VeryLazy' },
-  version = '*',
-  opts = {
-    options = {
-      -- mode = 'tabs',
-      separator_style = 'thin',
-    }
-  },
-
   config = function()
     local bufferline = require('bufferline')
     bufferline.setup({
@@ -16,7 +8,7 @@ return {
         separator_style = 'thin',
         always_show_bufferline = false,
         indicator = {
-          icon = '',
+          -- icon = '',
           style = 'icon',
         },
         tab_size = 10,
@@ -31,19 +23,19 @@ return {
 
     local keymap = vim.keymap
     -- Buffer management
-		for i = 1, 9 do
-			keymap.set(
-				"n",
-				"<A-" .. tostring(i) .. ">",
-				"<Cmd>BufferLineGoToBuffer " .. tostring(i) .. "<cr>",
-				{ silent = true }
-			)
-		end
-		keymap.set("n", "<A-0>", "<cmd>BufferLineGoToBuffer -1<cr>", { silent = true })
-		keymap.set("n", "<A-l>", "<cmd>BufferLineCycleNext<cr>", { silent = true })
-		keymap.set("n", "<A-h>", "<cmd>BufferLineCyclePrev<cr>", { silent = true })
-		keymap.set("n", "<A-L>", "<cmd>BufferLineMoveNext<cr>", { silent = true })
-		keymap.set("n", "<A-H>", "<cmd>BufferLineMovePrev<cr>", { silent = true })
+    for i = 1, 9 do
+      keymap.set(
+        "n",
+        "<A-" .. tostring(i) .. ">",
+        "<Cmd>BufferLineGoToBuffer " .. tostring(i) .. "<cr>",
+        { silent = true }
+      )
+    end
+    keymap.set("n", "<A-0>", "<cmd>BufferLineGoToBuffer -1<cr>", { silent = true })
+    keymap.set("n", "<A-l>", "<cmd>BufferLineCycleNext<cr>", { silent = true })
+    keymap.set("n", "<A-h>", "<cmd>BufferLineCyclePrev<cr>", { silent = true })
+    keymap.set("n", "<A-L>", "<cmd>BufferLineMoveNext<cr>", { silent = true })
+    keymap.set("n", "<A-H>", "<cmd>BufferLineMovePrev<cr>", { silent = true })
     keymap.set('n', '<A-d>', '<cmd>bdelete!<CR>', { silent = true })
     keymap.set('n', '<A-o>', '<cmd>BufferLineCloseOthers<CR>', { silent = true })
     keymap.set('n', '<leader>br', '<cmd>BufferLineCloseRight<CR>', { silent = true })
