@@ -12,7 +12,7 @@
 - 输入：自动括号匹配、自动注释、自动输入补全。
 - 外观：Bufferline、主题、状态栏插件、treesitter。
 - LSP：自动下载Language Server、语言层面的补全、错误诊断。
-- 版本控制：Gitsigns。
+- 版本控制：Gitsigns, neogit, GV。
 - 其他：文件树、模糊搜索、终端管理。
 
 # 依赖项

@@ -12,7 +12,7 @@ Functions in this configurations includs:
 - Input enhancing: auto bracket pair, auto comment, auto completion.
 - Appearance: bufferline, colortheme, statusline enhancing, treesitter.
 - LSP: language server auto downloading, auto completion of languages, error diagnosis.
-- Version controling: gitsigns.
+- Basic version controling: gitsigns, neogit, GV.
 - Other: file tree, fuzzy finding, terminal management.
 
 # Dependencies
