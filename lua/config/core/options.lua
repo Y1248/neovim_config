@@ -1,8 +1,9 @@
+-- Netrw about
 -- vim.cmd('let g:netrw_liststyle = 3')
 -- vim.cmd('let g:netrw_banner = 0')
 -- vim.cmd('let g:netrw_winsize = 20')
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1       -- Disable netrw
+vim.g.loaded_netrwPlugin = 1 -- Same as the previous line
 
 vim.opt.clipboard:append('unnamedplus') -- use system clipboard as default register
 
@@ -54,6 +55,7 @@ local options = {
   list = false,
   background = "dark",
   backspace = "indent,eol,start",
+  scrolloff = 8,
 }
 
 for k, v in pairs(options) do
