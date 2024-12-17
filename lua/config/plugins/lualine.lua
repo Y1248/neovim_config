@@ -24,14 +24,10 @@ return {
         }
       },
       sections = {
-        lualine_a = { 'mode' },
+        lualine_a = { { 'mode', fmt = function(str) return str:sub(1, 1) end } },
         lualine_b = {
           { 'branch', icon = '' },
-          {
-            'diff',
-            -- fmt = function(res) return res .. ' ' end,
-            padding = 0
-          },
+          { 'diff', padding = 0 },
           {
             'diagnostics',
 
@@ -60,25 +56,25 @@ return {
             padding = 0
           }
         },
-        lualine_c = { 'filename' },
+        lualine_c = { { 'filename' } },
         -- lualine_x = {'encoding', 'fileformat', 'filetype'},
-        lualine_x = { 'filetype' },
-        lualine_y = { { 'progress', padding = 0 } },
+        lualine_x = { { 'filetype', padding = 0, icon_only = true } },
+        lualine_y = { },
+        lualine_z = { { 'progress', padding = 0 } },
         -- lualine_z = {'location'}
-        lualine_z = { }
       },
       inactive_sections = {
         lualine_a = {},
         lualine_b = {},
-        lualine_c = {'filename'},
-        lualine_x = {'location'},
+        lualine_c = { 'filename' },
+        lualine_x = {},
         lualine_y = {},
         lualine_z = {}
       },
       tabline = {},
       winbar = {},
       inactive_winbar = {},
-      extensions = { 'nvim-tree', 'toggleterm' }
+      extensions = { 'nvim-tree', 'toggleterm', 'lazy', 'mason' }
     }
   end
 }
