@@ -18,7 +18,7 @@ keymap.set('n', '<C-h>', '<C-w>h', { silent = true })
 keymap.set('n', '<C-j>', '<C-w>j', { silent = true })
 keymap.set('n', '<C-k>', '<C-w>k', { silent = true })
 keymap.set('n', '<C-l>', '<C-w>l', { silent = true })
-keymap.set('n', '<C-o>', '<C-w>o', { silent = true })
+-- keymap.set('n', '<C-o>', '<C-w>o', { silent = true }) -- User <C-w>o instead
 
 -- -- Explore management
 -- keymap.set('n', '<leader>E', '<cmd>Explore<CR>', {desc = 'Open Explore window'})
