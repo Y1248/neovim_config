@@ -4,6 +4,7 @@ return {
   event = { 'BufReadPre', 'BufNewFile' },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
+    "nvim-telescope/telescope.nvim",
     { "antosha417/nvim-lsp-file-operations", config = true },
     { "folke/neodev.nvim", opts = {} },
     {
