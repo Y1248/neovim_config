@@ -3,7 +3,7 @@ local keymap = vim.keymap
 
 keymap.set('n', '<leader>w', '<cmd>w<CR>', {desc = 'Save file'})
 
--- Basic buffer management
+-- Basic Buffer Management
 keymap.set('n', '<leader>bb', ':buffers<cr>:b<space>', { silent = true })
 keymap.set('n', '<leader>q', '<cmd>bdelete!<CR>', {desc = 'Close current buffer'})
 -- Addtional buffer management: check bufferline.lua file
@@ -20,7 +20,10 @@ keymap.set('n', '<C-k>', '<C-w>k', { silent = true })
 keymap.set('n', '<C-l>', '<C-w>l', { silent = true })
 -- keymap.set('n', '<C-o>', '<C-w>o', { silent = true }) -- User <C-w>o instead
 
--- -- Explore management
+-- -- Explore Management
 -- keymap.set('n', '<leader>E', '<cmd>Explore<CR>', {desc = 'Open Explore window'})
 -- keymap.set('n', '<leader>L', '<cmd>Lexplore<CR>', {desc = 'Open Explore window'})
 
+-- Tabs Management
+keymap.set('n', '<leader>tn', '<cmd>tabnew<CR>', {desc = 'Open new tab'})
+keymap.set('n', '<leader>tc', '<cmd>tabclose<CR>', {desc = 'Close current tab'})

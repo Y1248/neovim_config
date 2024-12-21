@@ -6,6 +6,7 @@ return {
     local bufferline = require('bufferline')
     bufferline.setup({
       options = {
+        mode = 'tabs',
         separator_style = 'thin',
         always_show_bufferline = false,
         indicator = {
