@@ -55,7 +55,7 @@ local options = {
   list = false,
   background = "dark",
   backspace = "indent,eol,start",
-  scrolloff = 8,
+  -- scrolloff = 8,
 }
 
 for k, v in pairs(options) do
