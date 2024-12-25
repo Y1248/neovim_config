@@ -9,7 +9,7 @@ return {
     { '<leader>ef', '<cmd>NvimTreeFindFile<CR>', desc = 'NvimTreeFindFile'},
   },
   config = function()
-    local nvimtree = require("nvim-tree")
+    local nvimtree = require('nvim-tree')
 
     -- recommended settings from nvim-tree documentation
     vim.g.loaded_netrw = 1
@@ -23,8 +23,8 @@ return {
         icons = {
           glyphs = {
             folder = {
-              arrow_closed = "", -- arrow when folder is closed
-              arrow_open = "", -- arrow when folder is open
+              arrow_closed = '', -- arrow when folder is closed
+              arrow_open = '', -- arrow when folder is open
             },
           },
         },

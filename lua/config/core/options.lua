@@ -53,8 +53,8 @@ local options = {
   backup = false,
   swapfile = false,
   list = false,
-  background = "dark",
-  backspace = "indent,eol,start",
+  background = 'dark',
+  backspace = 'indent,eol,start',
   -- scrolloff = 8,
 }
 

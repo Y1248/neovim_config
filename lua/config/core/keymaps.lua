@@ -4,10 +4,10 @@ local keymap = vim.keymap
 keymap.set('n', '<leader>w', '<cmd>w<CR>', { silent = true })
 
 -- Buffers Management (`<leader>b` prefix)
-keymap.set('n', '<leader>bb', ':buffers<cr>:b<space>', { silent = true })
+keymap.set('n', '<leader>bb', '<CMD>buffers<CR><CMD>b<SPACE>', { silent = true })
 keymap.set('n', '<leader>bo', '<CMD>%bd | e#<CR>', { silent = true })
 
--- Tabs Management
+-- Tabs Management (`<A-> prefix`)
 keymap.set('n', '<A-n>', '<CMD>tabnew<CR>', { silent = true })
 keymap.set('n', '<A-h>', '<CMD>tabprev<CR>', { silent = true })
 keymap.set('n', '<A-l>', '<CMD>tabnext<CR>', { silent = true })
