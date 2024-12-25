@@ -22,8 +22,13 @@ keymap.set('n', '<C-h>', '<C-w>h', { silent = true })
 keymap.set('n', '<C-j>', '<C-w>j', { silent = true })
 keymap.set('n', '<C-k>', '<C-w>k', { silent = true })
 keymap.set('n', '<C-l>', '<C-w>l', { silent = true })
-keymap.set('n', '<leader>q', '<CMD>close<CR>', { silent = true })
+keymap.set('n', '<C-O>', '<C-w>o', { silent = true })
+keymap.set('n', '<C-Right>', '<CMD>vertical resize +5<CR>', { silent = true })
+keymap.set('n', '<C-Left>', '<CMD>vertical resize -5<CR>', { silent = true })
+keymap.set('n', '<C-Up>', '<CMD>resize +5<CR>', { silent = true })
+keymap.set('n', '<C-Down>', '<CMD>resize -5<CR>', { silent = true })
 keymap.set('n', '<leader>o', '<C-w>o', { silent = true })
+keymap.set('n', '<leader>q', '<CMD>close<CR>', { silent = true })
 
 -- -- Explore Management
 -- let g:netrw_liststyle = 3
