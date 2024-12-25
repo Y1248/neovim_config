@@ -45,10 +45,20 @@ return {
       "sindrets/diffview.nvim",
     },
     cmd = { 'Neogit', 'NeogitCommit' },
-  },
-  {
-    'junegunn/gv.vim',
-    dependencies = { 'tpope/vim-fugitive' },
-    cmd = { 'GV' }
+    config = function()
+      require('neogit').setup({
+        disable_hint = true,
+        commit_view = {
+          kind = 'tab',
+        },
+        integrations = {
+          diffview = true,
+          mini_pick = true
+        },
+        status = {
+          recent_commit_count = 25,
+        },
+      })
+    end
   },
 }
