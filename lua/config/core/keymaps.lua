@@ -1,29 +1,33 @@
 vim.g.mapleader = ','
 local keymap = vim.keymap
 
-keymap.set('n', '<leader>w', '<cmd>w<CR>', {desc = 'Save file'})
+keymap.set('n', '<leader>w', '<cmd>w<CR>', { silent = true })
 
--- Basic Buffer Management
+-- Buffers Management (`<leader>b` prefix)
 keymap.set('n', '<leader>bb', ':buffers<cr>:b<space>', { silent = true })
-keymap.set('n', '<leader>q', '<cmd>bdelete!<CR>', {desc = 'Close current buffer'})
--- Addtional buffer management: check bufferline.lua file
-  -- <A-d> delete the current buffer
-  -- <A-#> change to buffer #
-  -- <A-{h/j/k/l} cycle to the h/j/k/l buffer
-  -- <A-o> only keep current buffer (which is delete all other buffers)
+keymap.set('n', '<leader>bo', '<CMD>%bd | e#<CR>', { silent = true })
 
--- Window Management
-keymap.set('n', '<leader>sx', '<cmd>close<CR>', {desc = 'Close current window'})
+-- Tabs Management
+keymap.set('n', '<A-n>', '<CMD>tabnew<CR>', { silent = true })
+keymap.set('n', '<A-h>', '<CMD>tabprev<CR>', { silent = true })
+keymap.set('n', '<A-l>', '<CMD>tabnext<CR>', { silent = true })
+keymap.set('n', '<A-H>', '<CMD>-tabmove<CR>', { silent = true })
+keymap.set('n', '<A-L>', '<CMD>+tabmove<CR>', { silent = true })
+keymap.set('n', '<A-d>', '<CMD>tabclose<CR>', { silent = true })
+keymap.set('n', '<A-q>', '<CMD>tabclose<CR>', { silent = true })
+keymap.set('n', '<A-o>', '<CMD>tabonly<CR>', { silent = true })
+
+-- Windows Management
 keymap.set('n', '<C-h>', '<C-w>h', { silent = true })
 keymap.set('n', '<C-j>', '<C-w>j', { silent = true })
 keymap.set('n', '<C-k>', '<C-w>k', { silent = true })
 keymap.set('n', '<C-l>', '<C-w>l', { silent = true })
--- keymap.set('n', '<C-o>', '<C-w>o', { silent = true }) -- User <C-w>o instead
+keymap.set('n', '<leader>q', '<CMD>close<CR>', { silent = true })
+keymap.set('n', '<leader>o', '<C-w>o', { silent = true })
 
 -- -- Explore Management
--- keymap.set('n', '<leader>E', '<cmd>Explore<CR>', {desc = 'Open Explore window'})
--- keymap.set('n', '<leader>L', '<cmd>Lexplore<CR>', {desc = 'Open Explore window'})
+-- let g:netrw_liststyle = 3
+-- let g:loaded_netrw = 0
+-- keymap.set('n', '<leader>E', '<cmd>Explore<CR>', { silent = true })
+-- keymap.set('n', '<leader>L', '<cmd>Lexplore<CR>', { silent = true })
 
--- Tabs Management
-keymap.set('n', '<leader>tn', '<cmd>tabnew<CR>', {desc = 'Open new tab'})
-keymap.set('n', '<leader>tc', '<cmd>tabclose<CR>', {desc = 'Close current tab'})
