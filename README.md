@@ -6,14 +6,15 @@ This is my personal configuration of NeoVIM, mainly using in Windows operating s
 
 # Outline of Configuration
 
-Functions in this configurations includs:
+Functions in this configurations includes:
 - Basic options and keymaps.
+- Basic tabs, buffers and windows management (independent to any plugins).
 - Plugin management: Lazy.
 - Input enhancing: auto bracket pair, auto comment, auto completion.
-- Appearance: bufferline, colortheme, statusline enhancing, treesitter.
+- Appearance: colortheme, statusline enhancing.
 - LSP: language server auto downloading, auto completion of languages, error diagnosis.
 - Basic version controling: gitsigns, neogit, GV.
-- Other: file tree, fuzzy finding, terminal management.
+- Other: file tree, fuzzy finding, terminal management, tree-sitter.
 
 # Dependencies
 
