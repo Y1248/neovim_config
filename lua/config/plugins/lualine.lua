@@ -24,7 +24,8 @@ return {
         }
       },
       sections = {
-        lualine_a = { { 'mode', fmt = function(str) return str:sub(1, 1) end } },
+        lualine_a = { 'filename' },
+        -- lualine_a = { { 'mode', fmt = function(str) return str:sub(1, 1) end } },
         lualine_b = {
           { 'branch', icon = '' },
           { 'diff', padding = 0 },
@@ -56,9 +57,10 @@ return {
             padding = 0
           }
         },
-        lualine_c = { { 'filename' } },
+        -- lualine_c = { { 'filename' } },
+        lualine_c = { },
         -- lualine_x = {'encoding', 'fileformat', 'filetype'},
-        lualine_x = { { 'filetype', padding = 0, icon_only = true } },
+        lualine_x = { { 'encoding' }, { 'filetype', padding = 0, icon_only = true } },
         lualine_y = { },
         lualine_z = { { 'progress', padding = 0 } },
         -- lualine_z = {'location'}
