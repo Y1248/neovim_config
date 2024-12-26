@@ -4,3 +4,4 @@
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/wopian.omp.json" | Invoke-Expression
 
 Set-Alias -Name v -Value nvim
+Set-Alias -Name e -Value nvim
