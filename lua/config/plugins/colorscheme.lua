@@ -3,7 +3,7 @@ return {
     'catppuccin/nvim',
     config = function()
       require('catppuccin').setup({
-        flavour = 'mocha',
+        flavour = 'macchiato',
         show_end_of_buffer = true,
         no_italic = true,
         styles = {
@@ -14,6 +14,7 @@ return {
           diffview = true,
         }
       })
+      vim.opt.background = 'dark'
       vim.cmd('colorscheme catppuccin')
     end
   },
