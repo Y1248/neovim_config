@@ -11,7 +11,7 @@ return {
             local diff = MiniStatusline.section_diff({ trunc_width = 75 })
             local diagnostics = MiniStatusline.section_diagnostics({ trunc_width = 75 })
             -- local lsp = MiniStatusline.section_lsp({ trunc_width = 75 })
-            local filename = MiniStatusline.section_filename({ trunc_width = 120 })
+            local filename = MiniStatusline.section_filename({ trunc_width = 150 })
             local fileinfo = MiniStatusline.section_fileinfo({ trunc_width = 1000 })
             local location_function = function() return '%l|%L' end
             local location = location_function()
