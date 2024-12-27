@@ -11,12 +11,13 @@ return {
     { '<leader>fs', '<cmd>Pick grep_live<cr>',  desc = 'Find string' },
   },
   config = function()
+    require('mini.icons').setup({})
     require('mini.pick').setup({
       window = {
         prompt_cursor = '█',
-        prompt_prefix = '󰅂 ',
+        prompt_prefix = '',
       }
     })
-    require('mini.extra').setup({ })
+    require('mini.extra').setup({})
   end
 }
