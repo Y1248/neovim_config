@@ -23,12 +23,12 @@ local options = {
   wrap = true,
   cmdheight = 1,
   pumheight = 12,
-  wildmenu = false,
+  wildmenu = true,
   lazyredraw = true,
   showmode = false,
   splitbelow = true,
   splitright = true,
-  guicursor = 'n-v-i-c:block-Cursor',
+  -- guicursor = 'n-v-i-c:block-Cursor',
 
   -- INDENT about
   tabstop = 2, -- spaces for tabs
