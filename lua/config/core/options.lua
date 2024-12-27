@@ -7,6 +7,8 @@ vim.g.loaded_netrwPlugin = 1 -- Same as the previous line
 
 vim.opt.clipboard:append('unnamedplus') -- use system clipboard as default register
 
+vim.cmd("cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'")
+
 local options = {
   -- APPEARENCE about
   fileencoding = 'utf-8',
