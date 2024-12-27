@@ -2,11 +2,7 @@ return {
   {
     'echasnovski/mini.statusline',
     event = { 'VeryLazy' },
-    dependencies = {
-      'echasnovski/mini.icons',
-    },
     config = function()
-      require('mini.icons').setup({})
       require('mini.statusline').setup({
         content = {
           active = function()
