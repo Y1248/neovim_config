@@ -2,15 +2,14 @@ return {
   'neovim/nvim-lspconfig',
   event = { 'BufReadPre', 'BufNewFile' },
   dependencies = {
+    { 'hrsh7th/cmp-nvim-lsp' },
     { 'echasnovski/mini.pick' },
-    { 'echasnovski/mini.completion' },
-    { 'antosha417/nvim-lsp-file-operations', config = true },
-    { 'folke/neodev.nvim', opts = {} },
     { 'williamboman/mason.nvim', }
   },
   config = function()
     local lspconfig = require('lspconfig')
     local mason_lspconfig = require('mason-lspconfig')
+    local cmp_nvim_lsp = require('cmp_nvim_lsp')
     local mini_extra = require('mini.extra')
 
     local keymap = vim.keymap -- for conciseness
@@ -33,10 +32,15 @@ return {
     keymap.set('n', 'K', vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
     keymap.set('n', '<leader>rs', ':LspRestart<CR>', opts) -- mapping to restart lsp if necessary
 
-    lspconfig.clangd.setup({ cmd = { 'clangd.exe' }, })
+    local lsp_capabilities = cmp_nvim_lsp.default_capabilities()
 
-    lspconfig.tinymist.setup({ cmd = { 'tinymist.exe' }, offset_encoding = 'utf-8', })
-    lspconfig.pyright.setup({})
+    lspconfig.clangd.setup({ capabilities = lsp_capabilities, })
+    lspconfig.tinymist.setup({
+      cmd = { 'tinymist.exe' },
+      offset_encoding = 'utf-8',
+      capabilities = lsp_capabilities,
+    })
+    lspconfig.pyright.setup({ capabilities = lsp_capabilities, })
 
     mason_lspconfig.setup_handlers({
       -- default handler for installed servers
