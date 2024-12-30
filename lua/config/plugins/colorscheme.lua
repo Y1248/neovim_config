@@ -1,5 +1,13 @@
 return {
   {
+    'Mofiqul/vscode.nvim',
+    config = function()
+      require('vscode').setup()
+      vim.cmd('colorscheme vscode')
+    end
+  },
+  --[[
+  {
     'catppuccin/nvim',
     config = function()
       require('catppuccin').setup({
@@ -18,4 +26,5 @@ return {
       vim.cmd('colorscheme catppuccin')
     end
   },
+  --]]
 }
