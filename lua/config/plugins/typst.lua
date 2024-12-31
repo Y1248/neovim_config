@@ -4,6 +4,10 @@ return {
     'chomosuke/typst-preview.nvim',
     ft = 'typst',
     -- event = { 'VeryLazy', 'BufReadPre', 'BufNewFile' },
+    keys = {
+      {'<leader>tp', '<CMD>TypstPreviewStop<CR><CMD>TypstPreview<CR>', { silent = true }},
+      {'<leader>ts', '<CMD>TypstPreviewStop<CR>', { silent = true }},
+    },
     version = '1.*',
     opts = {},
     config = function()
