@@ -24,5 +24,5 @@ end
 -- Setup lazy.nvim
 lazy.setup({
   {import = 'config.plugins' },
-  -- {import = 'config.plugins.lsp'}
+  {import = 'config.plugins.lsp'}
 })

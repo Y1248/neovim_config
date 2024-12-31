@@ -40,12 +40,13 @@ return {
       offset_encoding = 'utf-8',
       capabilities = lsp_capabilities,
     })
-    lspconfig.pyright.setup({ capabilities = lsp_capabilities, })
+    -- lspconfig.pyright.setup({ capabilities = lsp_capabilities, })
 
     mason_lspconfig.setup_handlers({
       -- default handler for installed servers
       function(server_name)
         lspconfig[server_name].setup({
+          capabilities = lsp_capabilities,
         })
       end,
     })
