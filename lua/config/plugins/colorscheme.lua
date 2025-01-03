@@ -1,4 +1,5 @@
 return {
+  --[[
   {
     'Mofiqul/vscode.nvim',
     config = function()
@@ -6,7 +7,8 @@ return {
       vim.cmd('colorscheme vscode')
     end
   },
-  --[[
+  --]]
+  ---[[
   {
     'catppuccin/nvim',
     config = function()
@@ -22,8 +24,8 @@ return {
           diffview = true,
         }
       })
-      vim.opt.background = 'dark'
-      vim.cmd('colorscheme catppuccin')
+      -- vim.opt.background = 'light'
+      vim.cmd('colorscheme catppuccin-latte')
     end
   },
   --]]
