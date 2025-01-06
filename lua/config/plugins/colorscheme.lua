@@ -16,16 +16,13 @@ return {
         flavour = 'macchiato',
         show_end_of_buffer = true,
         no_italic = true,
-        styles = {
-          functions = { 'bold' },
-          keywords = { 'bold' },
-        },
+        styles = {},
         integrations = {
           diffview = true,
         }
       })
       -- vim.opt.background = 'light'
-      vim.cmd('colorscheme catppuccin-latte')
+      vim.cmd('colorscheme catppuccin')
     end
   },
   --]]

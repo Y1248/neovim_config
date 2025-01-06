@@ -28,7 +28,6 @@ local options = {
   showmode = false,
   splitbelow = true,
   splitright = true,
-  background = 'light',
   -- guicursor = 'n-v-i-c:block-Cursor',
 
   -- INDENT about
