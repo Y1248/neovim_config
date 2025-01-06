@@ -22,7 +22,7 @@ return {
         }
       })
       -- vim.opt.background = 'light'
-      vim.cmd('colorscheme catppuccin')
+      vim.cmd('colorscheme catppuccin-latte')
     end
   },
   --]]
