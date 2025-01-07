@@ -16,7 +16,12 @@ return {
         flavour = 'macchiato',
         show_end_of_buffer = true,
         no_italic = true,
-        styles = {},
+        styles = {
+          keywords = { 'bold' },
+          functions = { 'bold' },
+          booleans = { 'bold' },
+          numbers = { 'bold' },
+        },
         integrations = {
           diffview = true,
         }
