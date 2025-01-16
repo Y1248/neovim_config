@@ -34,12 +34,12 @@ return {
 
     local lsp_capabilities = cmp_nvim_lsp.default_capabilities()
 
-    lspconfig.clangd.setup({ capabilities = lsp_capabilities, })
     lspconfig.tinymist.setup({
       cmd = { 'tinymist.exe' },
       offset_encoding = 'utf-8',
       capabilities = lsp_capabilities,
     })
+    -- lspconfig.clangd.setup({ capabilities = lsp_capabilities, })
     -- lspconfig.pyright.setup({ capabilities = lsp_capabilities, })
 
     mason_lspconfig.setup_handlers({
