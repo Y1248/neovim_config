@@ -23,8 +23,8 @@
 - [Git](https://git-scm.com/downloads)：版本管理和自动下载插件。
 - [MinGW-w64](https://winlibs.com/)：免费的C/C++编译环境。在此配置中，它主要是为了tree-sitter的一些编译工作以及clangd language server.
 - [ripgrep](https://github.com/BurntSushi/ripgrep)：搜索工具。
-- [Node.js](https://nodejs.org/en)：为了用其中的npm下载一些language server。
 - typst相关：[Tinymist](https://github.com/Myriad-Dreamin/tinymist)、[typst](https://github.com/typst/typst)、[websocat](https://github.com/vi/websocat)。
+- (Optional) [Node.js](https://nodejs.org/en)：为了用其中的npm下载一些language server。
 
 # 配置指南
 
