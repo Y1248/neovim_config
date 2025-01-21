@@ -28,7 +28,7 @@ local options = {
   showmode = false,
   splitbelow = true,
   splitright = true,
-  guicursor = 'n-v-i-c:block-Cursor',
+  -- guicursor = 'n-v-i-c:block-Cursor',
 
   -- INDENT about
   tabstop = 2, -- spaces for tabs

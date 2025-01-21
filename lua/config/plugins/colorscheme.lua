@@ -1,5 +1,5 @@
 return {
-  ---[[
+  --[[
   {
     'Mofiqul/vscode.nvim',
     config = function()
@@ -27,12 +27,12 @@ return {
     end
   },
   --]]
-  --[[
+  ---[[
   {
     'catppuccin/nvim',
     config = function()
       require('catppuccin').setup({
-        flavour = 'macchiato',
+        flavour = 'mocha',
         show_end_of_buffer = true,
         no_italic = true,
         styles = {
