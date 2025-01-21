@@ -1,0 +1,31 @@
+{
+    // UI
+    "workbench.startupEditor": "none",
+    "window.density.editorTabHeight": "compact",
+    "workbench.activityBar.location": "top",
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.enabled": false,
+    "editor.glyphMargin": false,
+    "editor.showFoldingControls": "never",
+    "breadcrumbs.enabled": false,
+    "window.menuBarVisibility": "toggle",
+
+    // Font
+    "editor.fontFamily": "UbuntuSansMono Nerd Font, Consolas, HarmonyOS Sans SC",
+    "editor.lineHeight": 1.1,
+    "editor.fontSize": 16,
+    "catppuccin.italicComments": false,
+    "catppuccin.italicKeywords": false,
+    
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1,
+        "asvetliakov.vscode-neovim": 1,
+    },
+
+    // Other
+    "editor.stickyScroll.enabled": false,
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "chat.commandCenter.enabled": false,
+}
+
