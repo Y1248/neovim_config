@@ -14,8 +14,6 @@
     "editor.fontFamily": "UbuntuSansMono Nerd Font, Consolas, HarmonyOS Sans SC",
     "editor.lineHeight": 1.1,
     "editor.fontSize": 16,
-    "catppuccin.italicComments": false,
-    "catppuccin.italicKeywords": false,
     
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1,
@@ -24,8 +22,6 @@
 
     // Other
     "editor.stickyScroll.enabled": false,
-    "workbench.iconTheme": "catppuccin-mocha",
-    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "material-icon-theme",
     "chat.commandCenter.enabled": false,
 }
-
