@@ -6,6 +6,7 @@ return {
       'echasnovski/mini.extra',
     },
     keys = {
+      { '<C-p>', '<cmd>Pick files<cr>',  desc = 'Fuzzy find files' },
       { '<leader>ff', '<cmd>Pick files<cr>',  desc = 'Fuzzy find files' },
       { '<leader>fr', '<cmd>Pick resume<cr>',  desc = 'Resume last search result' },
       { '<leader>fs', '<cmd>Pick grep_live<cr>',  desc = 'Find string' },
