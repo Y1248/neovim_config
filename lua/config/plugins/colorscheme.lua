@@ -1,5 +1,5 @@
 return {
-  --[[
+  ---[[
   {
     'Mofiqul/vscode.nvim',
     config = function()
@@ -27,7 +27,7 @@ return {
     end
   },
   --]]
-  ---[[
+  --[[
   {
     'catppuccin/nvim',
     config = function()
