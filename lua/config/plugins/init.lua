@@ -23,11 +23,11 @@ return {
             color = '#2B7CD3',
             name = 'pdf',
           },
-          -- ['m'] = {
-          --   icon = '',
-          --   color = '#CD5431',
-          --   name = 'matlab',
-          -- },
+          ['m'] = {
+            icon = '',
+            color = '#CD5431',
+            name = 'matlab',
+          },
         },
       }
     end
