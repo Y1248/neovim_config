@@ -15,7 +15,7 @@ return {
       require('mini.pick').setup({
         window = {
           prompt_cursor = '█',
-          prompt_prefix = '',
+          prompt_prefix = ' ',
         }
       })
       require('mini.extra').setup({})
