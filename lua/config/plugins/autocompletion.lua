@@ -65,7 +65,7 @@ return {
       },
       formatting = {
         format = function(entry, vim_item)
-          local max_length = 50
+          local max_length = 36
           if string.len(vim_item.abbr) > max_length then
             vim_item.abbr = string.sub(vim_item.abbr, 1, max_length - 3) .. '...'
           end
