@@ -1,5 +1,5 @@
 return {
-  ---[[
+  --[[
   {
     'Mofiqul/vscode.nvim',
     config = function()
@@ -27,12 +27,12 @@ return {
     end
   },
   --]]
-  --[[
+  ---[[
   {
     'catppuccin/nvim',
     config = function()
       require('catppuccin').setup({
-        flavour = 'mocha',
+        flavour = 'latte',
         show_end_of_buffer = true,
         no_italic = true,
         styles = {
@@ -43,10 +43,11 @@ return {
         },
         integrations = {
           diffview = true,
-        }
+          -- Bufferline: do the special support in bufferline.lua file
+        },
       })
       -- vim.opt.background = 'light'
-      vim.cmd('colorscheme catppuccin-mocha')
+      vim.cmd('colorscheme catppuccin')
     end
   },
   --]]

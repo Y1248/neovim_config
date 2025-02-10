@@ -1,7 +1,7 @@
 return {
   'akinsho/bufferline.nvim',
   event = { 'VeryLazy' },
-  -- after = 'catppuccin',
+  after = 'catppuccin',
   config = function()
     local bufferline = require('bufferline')
     bufferline.setup({
@@ -22,7 +22,7 @@ return {
         left_trunc_marker = '',
         right_trunc_marker = '',
       },
-      -- highlights = require("catppuccin.groups.integrations.bufferline").get(),
+      highlights = require("catppuccin.groups.integrations.bufferline").get(),
     })
 
     local keymap = vim.keymap
