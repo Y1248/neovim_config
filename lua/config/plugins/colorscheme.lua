@@ -45,6 +45,12 @@ return {
           diffview = true,
           -- Bufferline: do the special support in bufferline.lua file
         },
+        color_overrides = {
+          latte = {
+            base = '#FFFFFF',
+            text = '#111111',
+          }
+        },
       })
       -- vim.opt.background = 'light'
       vim.cmd('colorscheme catppuccin')
