@@ -27,7 +27,7 @@ return {
       vim.g.loaded_netrw = 1
       vim.g.loaded_netrwPlugin = 1
       nvimtree.setup({
-        view = { width = 25, },
+        view = { width = 25, signcolumn = 'no' },
         -- change folder arrow icons
         renderer = {
           indent_markers = { enable = true, },
