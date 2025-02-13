@@ -45,6 +45,7 @@ local options = {
 
   -- EDIT about
   mouse = 'a',
+  mousemodel = 'extend',
   ignorecase = true, -- ignore case in searching
   smartcase = true, -- if you include mixed case in your search, assumes you want case-sensitive
   hlsearch = true,
