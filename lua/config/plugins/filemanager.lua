@@ -1,58 +1,18 @@
 return {
-  --[[
-  {
-    'echasnovski/mini.files',
-    keys = {
-      { '<leader>ee', function() require('mini.files').open() end, { silent = true }},
-      { '<leader>ef', function() require('mini.files').open(vim.api.nvim_buf_get_name(0)) end, { silent = true }},
-      { '<leader>er', function() require('mini.files').open(vim.api.nvim_buf_get_name(0), false) end, { silent = true }},
-    },
-    config = function()
-      require('mini.files').setup({})
-    end
+  "nvim-neo-tree/neo-tree.nvim",
+  lazy = true,
+  dependencies = {
+    'MunifTanjim/nui.nvim',
   },
-  --]]
-  {
-    'nvim-tree/nvim-tree.lua',
-    lazy = true,
-    keys = {
-      { '<leader>ee', '<cmd>NvimTreeToggle<CR>', desc = 'NvimTreeToggle'},
-      { '<leader>ec', '<cmd>NvimTreeCollapse<CR>', desc = 'NvimTreeCollapse'},
-      { '<leader>er', '<cmd>NvimTreeRefresh<CR>', desc = 'NvimTreeRefresh'},
-      { '<leader>ef', '<cmd>NvimTreeFindFile<CR>', desc = 'NvimTreeFindFile'},
-    },
-    config = function()
-      local nvimtree = require('nvim-tree')
-      -- recommended settings from nvim-tree documentation
-      vim.g.loaded_netrw = 1
-      vim.g.loaded_netrwPlugin = 1
-      nvimtree.setup({
-        view = { width = 25, signcolumn = 'no' },
-        -- change folder arrow icons
-        renderer = {
-          indent_markers = { enable = true, },
-          icons = {
-            glyphs = {
-              folder = {
-                arrow_closed = '', -- arrow when folder is closed
-                arrow_open = '', -- arrow when folder is open
-              },
-            },
-          },
-        },
-        -- disable window_picker for explorer to work well with window splits
-        actions = {
-          open_file = {
-            window_picker = {
-              enable = false,
-            },
-          },
-        },
-        filters = {
-          custom = { '^\\.git', },
-        },
-        git = { ignore = false, },
-      })
-    end
-  }
+  keys = {
+    { '<leader>ee', '<CMD>Neotree toggle<CR>', { silent = true } },
+    { '<leader>ef', '<CMD>Neotree reveal=true toggle<CR>', { silent = true } },
+  },
+  config = function()
+    require('neo-tree').setup({
+      window = {
+        width = 25,
+      }
+    })
+  end
 }
