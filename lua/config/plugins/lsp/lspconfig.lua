@@ -40,14 +40,14 @@ return {
     })
     -- lspconfig.clangd.setup({ capabilities = lsp_capabilities, })
     -- lspconfig.pyright.setup({ capabilities = lsp_capabilities, })
-    lspconfig.matlab_ls.setup({
-      capabilities = lsp_capabilities,
-      settings = {
-        MATLAB = {
-          installPath = "C:\\Program Files\\MATLAB\\R2024b",
-        }
-      }
-    })
+    -- lspconfig.matlab_ls.setup({
+    --   capabilities = lsp_capabilities,
+    --   settings = {
+    --     MATLAB = {
+    --       installPath = "C:\\Program Files\\MATLAB\\R2024b",
+    --     }
+    --   }
+    -- })
 
     mason_lspconfig.setup_handlers({
       -- default handler for installed servers
