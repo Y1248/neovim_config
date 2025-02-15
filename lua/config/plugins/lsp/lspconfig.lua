@@ -2,7 +2,7 @@ return {
   'neovim/nvim-lspconfig',
   event = { 'BufReadPre', 'BufNewFile' },
   dependencies = {
-    { 'hrsh7th/cmp-nvim-lsp' },
+    { 'saghen/blink.cmp' },
     { 'echasnovski/mini.pick'},
     { 'echasnovski/mini.extra'},
     { 'williamboman/mason.nvim', }
@@ -10,7 +10,6 @@ return {
   config = function()
     local lspconfig = require('lspconfig')
     local mason_lspconfig = require('mason-lspconfig')
-    local cmp_nvim_lsp = require('cmp_nvim_lsp')
     local mini_extra = require('mini.extra')
 
     local keymap = vim.keymap -- for conciseness
@@ -32,7 +31,7 @@ return {
     keymap.set('n', 'K', vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
     keymap.set('n', '<leader>rs', ':LspRestart<CR>', opts) -- mapping to restart lsp if necessary
 
-    local lsp_capabilities = cmp_nvim_lsp.default_capabilities()
+    local lsp_capabilities = require('blink.cmp').get_lsp_capabilities()
 
     lspconfig.tinymist.setup({
       cmd = { 'tinymist.exe' },
