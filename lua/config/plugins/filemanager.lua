@@ -1,18 +1,43 @@
 return {
-  "nvim-neo-tree/neo-tree.nvim",
+  'nvim-tree/nvim-tree.lua',
   lazy = true,
-  dependencies = {
-    'MunifTanjim/nui.nvim',
-  },
   keys = {
-    { '<leader>ee', '<CMD>Neotree toggle<CR>', { silent = true } },
-    { '<leader>ef', '<CMD>Neotree reveal=true toggle<CR>', { silent = true } },
+    { '<leader>ee', '<cmd>NvimTreeToggle<CR>', desc = 'NvimTreeToggle'},
+    { '<leader>ec', '<cmd>NvimTreeCollapse<CR>', desc = 'NvimTreeCollapse'},
+    { '<leader>er', '<cmd>NvimTreeRefresh<CR>', desc = 'NvimTreeRefresh'},
+    { '<leader>ef', '<cmd>NvimTreeFindFile<CR>', desc = 'NvimTreeFindFile'},
   },
   config = function()
-    require('neo-tree').setup({
-      window = {
-        width = 25,
-      }
+    local nvimtree = require('nvim-tree')
+    -- recommended settings from nvim-tree documentation
+    vim.g.loaded_netrw = 1
+    vim.g.loaded_netrwPlugin = 1
+    nvimtree.setup({
+      view = { width = 25, signcolumn = 'no' },
+      -- change folder arrow icons
+      renderer = {
+        indent_markers = { enable = true, },
+        icons = {
+          glyphs = {
+            folder = {
+              arrow_closed = '', -- arrow when folder is closed
+              arrow_open = '', -- arrow when folder is open
+            },
+          },
+        },
+      },
+      -- disable window_picker for explorer to work well with window splits
+      actions = {
+        open_file = {
+          window_picker = {
+            enable = false,
+          },
+        },
+      },
+      filters = {
+        custom = { '^\\.git', },
+      },
+      git = { ignore = false, },
     })
   end
 }
