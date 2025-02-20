@@ -1,7 +1,6 @@
 return {
   'neovim/nvim-lspconfig',
-  ft = { 'cpp', 'hpp', 'h', 'c', 'py' },
-  -- event = { 'BufReadPre', 'BufNewFile' },
+  event = { 'BufReadPre', 'BufNewFile' },
   dependencies = {
     { 'saghen/blink.cmp' },
     { 'echasnovski/mini.pick'},

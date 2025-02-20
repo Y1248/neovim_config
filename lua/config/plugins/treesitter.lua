@@ -1,8 +1,7 @@
 return {
   ---[[
   'nvim-treesitter/nvim-treesitter',
-  ft = { 'py' },
-  -- event = { 'BufReadPre', 'BufNewFile' },
+  event = { 'BufReadPre', 'BufNewFile' },
   config = function()
     require('nvim-treesitter.configs').setup {
       -- A list of parser names, or "all" (the listed parsers MUST always be installed)
