@@ -38,8 +38,6 @@ return {
     keymap.set("n", "<A-0>", "<cmd>BufferLineGoToBuffer -1<cr>", { silent = true })
     keymap.set("n", "<A-l>", "<cmd>BufferLineCycleNext<cr>", { silent = true })
     keymap.set("n", "<A-h>", "<cmd>BufferLineCyclePrev<cr>", { silent = true })
-    keymap.set("n", "<A-L>", "<cmd>BufferLineMoveNext<cr>", { silent = true })
-    keymap.set("n", "<A-H>", "<cmd>BufferLineMovePrev<cr>", { silent = true })
     keymap.set('n', '<A-d>', '<cmd>bdelete!<CR>', { silent = true })
     keymap.set('n', '<A-o>', '<cmd>BufferLineCloseOthers<CR>', { silent = true })
     keymap.set('n', '<leader>br', '<cmd>BufferLineCloseRight<CR>', { silent = true })
