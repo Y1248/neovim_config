@@ -23,9 +23,15 @@ return {
         }
       },
       sections = {
-        lualine_a = { { 'mode', fmt = function(str) return str:sub(1, 1) end } },
+        lualine_a = {
+          {
+            'mode',
+            -- fmt = function(str) return str:sub(1, 1) end,
+            padding = 0
+          }
+        },
         lualine_b = {
-          { 'branch', icon = '' },
+          { 'branch', icon = '', padding = 1 },
           { 'diff', padding = 0 },
           {
             'diagnostics',
@@ -46,17 +52,21 @@ return {
               info  = 'DiagnosticInfo',  -- Changes diagnostics' info color.
               hint  = 'DiagnosticHint',  -- Changes diagnostics' hint color.
             },
-            symbols = {error = '󰯸 ', warn = '󰰮 ', info = '󰰄 ', hint = '󰰁 '},
+            symbols = {error = '󰯹 ', warn = '󰰯 ', info = '󰰅 ', hint = '󰰂 '},
             -- symbols = {error = ' ', warn = ' ', info = '󰠠 ', hint = ' '},
             colored = true,           -- Displays diagnostics status in color if set to true.
             update_in_insert = false, -- Update diagnostics in insert mode.
             always_visible = false,   -- Show diagnostics even if there are none.
             -- fmt = function(res) return res .. ' ' end,
+            padding = 0,
           }
         },
-        lualine_c = { { 'filename' } },
+        lualine_c = { { 'filename', padding = 0 } },
         -- lualine_x = {'encoding', 'fileformat', 'filetype'},
-        lualine_x = { { 'encoding' }, { 'filetype', padding = 0, icon_only = true } },
+        lualine_x = {
+          { 'encoding', padding = 1 },
+          { 'filetype', padding = 0, icon_only = true }
+        },
         lualine_y = { },
         lualine_z = { { 'progress', padding = 0 } },
         -- lualine_z = {'location'}
