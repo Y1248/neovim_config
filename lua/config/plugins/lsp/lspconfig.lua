@@ -2,7 +2,7 @@ return {
   'neovim/nvim-lspconfig',
   event = { 'BufReadPre', 'BufNewFile' },
   dependencies = {
-    { 'saghen/cmp-nvim-lsp' },
+    { 'hrsh7th/cmp-nvim-lsp' },
     { 'williamboman/mason.nvim', }
   },
   config = function()
