@@ -5,7 +5,7 @@ return {
   dependencies = {
     'hrsh7th/cmp-buffer',
     'hrsh7th/cmp-path',
-    -- 'hrsh7th/cmp-nvim-lsp-signature-help',
+    'hrsh7th/cmp-nvim-lsp-signature-help',
     'neovim/nvim-lspconfig',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-cmdline',
@@ -55,7 +55,7 @@ return {
         { name = 'nvim_lsp' },
         { name = 'buffer' },
         { name = 'path' },
-        -- { name = 'nvim_lsp_signature_help' },
+        { name = 'nvim_lsp_signature_help' },
       }),
       confirm_opts = {
         behavior = cmp.ConfirmBehavior.Replace,
