@@ -58,7 +58,7 @@ return {
             update_in_insert = false, -- Update diagnostics in insert mode.
             always_visible = false,   -- Show diagnostics even if there are none.
             -- fmt = function(res) return res .. ' ' end,
-            padding = 0,
+            padding = 1,
           }
         },
         lualine_c = { { 'filename', padding = 0 } },
