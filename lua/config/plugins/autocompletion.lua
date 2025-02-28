@@ -122,15 +122,18 @@ return {
         ['<S-Tab>'] = { 'select_prev', 'fallback' },
       },
       completion = {
+        accept = { auto_brackets = { enabled = false }, },
         list = {
           selection = { preselect = function(ctx) return ctx.mode ~= 'cmdline' end }
-        }
+        },
+        menu = { auto_show = true, },
       },
       fuzzy = {
         prebuilt_binaries = {
           download = false,
           ignore_version_mismatch = true,
         },
+        implementation = 'lua',
       },
       signature = { enabled = true, },
       appearance = {
