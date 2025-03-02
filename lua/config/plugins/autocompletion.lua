@@ -112,6 +112,7 @@ return {
     lazy = true,
     event = { 'InsertEnter' },
     dependencies = 'rafamadriz/friendly-snippets',
+    version = "*",
     opts = {
       keymap = {
         preset = 'enter',
@@ -128,13 +129,13 @@ return {
         },
         menu = { auto_show = true, },
       },
-      fuzzy = {
-        prebuilt_binaries = {
-          download = false,
-          ignore_version_mismatch = true,
-        },
-        implementation = 'lua',
-      },
+      -- fuzzy = {
+      --   prebuilt_binaries = {
+      --     download = false,
+      --     ignore_version_mismatch = true,
+      --   },
+      --   implementation = 'lua',
+      -- },
       signature = { enabled = true, },
       appearance = {
         -- use_nvim_cmp_as_default = true,
