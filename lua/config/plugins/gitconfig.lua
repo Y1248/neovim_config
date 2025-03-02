@@ -44,9 +44,23 @@ return {
     'NeogitOrg/neogit',
     dependencies = {
       'nvim-lua/plenary.nvim',
-      'sindrets/diffview.nvim',
+      {
+        'sindrets/diffview.nvim',
+        config = function()
+          require('diffview').setup({
+            file_panel = { win_config = { width = 25, } },
+            file_history_panel = { win_config = { height = 12, } },
+          })
+        end
+      },
     },
-    cmd = { 'Neogit', 'NeogitCommit' },
+    keys = {
+      { '<leader>ng', '<CMD>Neogit<CR>', desc = 'Open neogit' },
+      { '<leader>dn', '<CMD>Neogit<CR>', desc = 'Open neogit' },
+      { '<leader>df', '<CMD>DiffviewOpen<CR>', desc = 'Open diffview' },
+      { '<leader>dh', '<CMD>DiffviewFileHistory<CR>', desc = 'Open git history' },
+    },
+    cmd = { 'Neogit', 'NeogitCommit', 'DiffviewOpen' },
     config = function()
       require('neogit').setup({
         disable_hint = true,
