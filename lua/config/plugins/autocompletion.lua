@@ -116,7 +116,7 @@ return {
     opts = {
       keymap = {
         preset = 'enter',
-        ['<C-d>'] = { 'show', 'show_documentation', 'hide_documentation' },
+        ['<C-d>'] = { 'show', 'hide', 'show_documentation', 'hide_documentation' },
         ['<Up>'] = { 'snippet_backward', 'fallback' },
         ['<Down>'] = { 'snippet_forward', 'fallback' },
         ['<Tab>'] = { 'select_next', 'fallback' },
@@ -138,7 +138,7 @@ return {
       -- },
       signature = { enabled = true, },
       appearance = {
-        -- use_nvim_cmp_as_default = true,
+        use_nvim_cmp_as_default = true,
         nerd_font_variant = 'mono'
       },
       sources = {
