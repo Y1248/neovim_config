@@ -57,6 +57,7 @@ local options = {
   swapfile = false,
   list = false,
   backspace = 'indent,eol,start',
+  jumpoptions = 'stack',
   -- scrolloff = 8,
 }
 
