@@ -1,6 +1,7 @@
 return {
   'neovim/nvim-lspconfig',
-  event = { 'BufReadPre', 'BufNewFile' },
+  cmd = { 'LspStart' },
+  -- event = { 'BufReadPre', 'BufNewFile' },
   dependencies = {
     { 'saghen/blink.cmp' },
     { 'williamboman/mason.nvim', }
