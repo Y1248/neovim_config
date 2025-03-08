@@ -5,7 +5,7 @@ return {
     local lualine = require('lualine')
     lualine.setup {
       options = {
-        icons_enabled = true,
+        icons_enabled = false,
         component_separators = { left = '', right = ''},
         section_separators = { left = '', right = ''},
         disabled_filetypes = {
@@ -27,7 +27,7 @@ return {
           {
             'mode',
             -- fmt = function(str) return str:sub(1, 1) end,
-            padding = 0
+            padding = 1
           }
         },
         lualine_b = {
@@ -52,7 +52,7 @@ return {
               info  = 'DiagnosticInfo',  -- Changes diagnostics' info color.
               hint  = 'DiagnosticHint',  -- Changes diagnostics' hint color.
             },
-            symbols = {error = '󰯹 ', warn = '󰰯 ', info = '󰰅 ', hint = '󰰂 '},
+            symbols = {error = 'E', warn = 'W', info = 'I', hint = 'H'},
             -- symbols = {error = ' ', warn = ' ', info = '󰠠 ', hint = ' '},
             colored = true,           -- Displays diagnostics status in color if set to true.
             update_in_insert = false, -- Update diagnostics in insert mode.
@@ -61,15 +61,17 @@ return {
             padding = 1,
           }
         },
-        lualine_c = { { 'filename', padding = 0 } },
+        lualine_c = { { 'filename', padding = 1 } },
         -- lualine_x = {'encoding', 'fileformat', 'filetype'},
         lualine_x = {
+          -- {
+          --   function() return vim.api.nvim_get_option_value("tabstop", {}) .. '>' end,
+          --   padding = 0,
+          -- },
           { 'encoding', padding = 1 },
-          { 'filetype', padding = 0, icon_only = true }
         },
-        lualine_y = { },
+        lualine_y = { { 'filetype', padding = 1 }, },
         lualine_z = { { 'progress', padding = 0 } },
-        -- lualine_z = {'location'}
       },
       inactive_sections = {
         lualine_a = {},
