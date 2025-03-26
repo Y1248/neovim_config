@@ -4,6 +4,7 @@
 -- vim.cmd('let g:netrw_winsize = 20')
 vim.g.loaded_netrw = 1       -- Disable netrw
 vim.g.loaded_netrwPlugin = 1 -- Same as the previous line
+vim.g.python_recommended_style = 0 -- Setting indent size to 2 for python files
 
 vim.opt.clipboard:append('unnamedplus') -- use system clipboard as default register
 
