@@ -1,6 +1,7 @@
 return {
   {
     'stevearc/oil.nvim',
+    lazy = false,
     cmd = { 'Oil' },
     keys = { { '<leader>ee', '<CMD>Oil<CR>', desc = 'Open oil at current folder' }, },
     config = function()
