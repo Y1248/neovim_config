@@ -8,23 +8,23 @@ This is my personal configuration of NeoVIM, mainly using in Windows operating s
 
 Functions in this configurations includes:
 - Basic options and keymaps.
-- Basic tabs, buffers and windows management (independent to any plugins).
+- Basic tabs, buffers and windows management.
 - Plugin management: Lazy.
-- Input enhancing: auto bracket pair, auto comment, auto completion.
+- Input enhancing: auto bracket pair, auto comment, auto completion, etc.
 - Appearance: colortheme, statusline enhancing.
 - LSP: language server auto downloading, auto completion of languages, error diagnosis.
-- Basic version controling: gitsigns, neogit, GV.
-- Other: file tree, fuzzy finding, terminal management, tree-sitter.
+- Basic version controling: gitsigns, neogit.
+- Other: file management, fuzzy finding, terminal management.
 
 # Dependencies
 
 There are several dependencies you need to installed before setup NeoVIM:
-- [WezTerm](https://github.com/wez/wezterm): a powerful terminal client. I use it for the client of NeoVIM. My personal configuration is [here](./other_configs/.wezterm.lua).
+- [WezTerm](https://github.com/wez/wezterm): a powerful terminal client. I use it for the client of NeoVIM. My personal configuration is [here](./other_configs/wezterm.lua).
 - [Git](https://git-scm.com/downloads): for version control and auto downloading of plugins.
-- [MinGW-w64](https://winlibs.com/): free C and C++ compiler for Microsoft Windows. In this configuration, it maily for the compiling tasks tree-sitter and clangd language server.
 - [ripgrep](https://github.com/BurntSushi/ripgrep): a powerful tool for fuzzy search.
-- typst: [Tinymist](https://github.com/Myriad-Dreamin/tinymist), [typst](https://github.com/typst/typst), [websocat](https://github.com/vi/websocat).
+- typst: [Tinymist](https://github.com/Myriad-Dreamin/tinymist), [typst](https://github.com/typst/typst), [websocat](https://github.com/vi/websocat). I prefer to write something using typst.
 - (Optional) [Node.js](https://nodejs.org/en): mainly for the `npm` tool inside for downloading some language servers.
+- (Optional, tree-sitter is turned off in this configuration)[MinGW-w64](https://winlibs.com/): free C and C++ compiler for Microsoft Windows. In this configuration, it maily for the compilation tasks of tree-sitter and clangd language server.
 
 # Setup This Config
 

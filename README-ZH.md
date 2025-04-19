@@ -13,18 +13,18 @@
 - 输入：自动括号匹配、自动注释、自动输入补全。
 - 外观：主题、状态栏插件。
 - LSP：自动下载Language Server、语言层面的补全、错误诊断。
-- 版本控制：gitsigns, neogit, GV。
-- 其他：文件树、模糊搜索、终端管理、tree-sitter。
+- 版本控制：gitsigns, neogit。
+- 其他：文件树、模糊搜索、终端管理。
 
 # 依赖项
 
 需要事先安装的依赖项有：
 - [WezTerm](https://github.com/wez/wezterm)：好用的终端客户端、我主要用它来作为NeoVIM的客户端。我的WezTerm的个人配置为[here](./other_configs/.wezterm.lua)。
 - [Git](https://git-scm.com/downloads)：版本管理和自动下载插件。
-- [MinGW-w64](https://winlibs.com/)：免费的C/C++编译环境。在此配置中，它主要是为了tree-sitter的一些编译工作以及clangd language server.
 - [ripgrep](https://github.com/BurntSushi/ripgrep)：搜索工具。
 - typst相关：[Tinymist](https://github.com/Myriad-Dreamin/tinymist)、[typst](https://github.com/typst/typst)、[websocat](https://github.com/vi/websocat)。
 - (Optional) [Node.js](https://nodejs.org/en)：为了用其中的npm下载一些language server。
+- (Optional, tree-sitter在此配置中已经关闭了)[MinGW-w64](https://winlibs.com/)：免费的C/C++编译环境。在此配置中，它主要是为了tree-sitter的一些编译工作以及clangd language server.
 
 # 配置指南
 
