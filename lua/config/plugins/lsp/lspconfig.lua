@@ -26,8 +26,9 @@ return {
     local lsp_capabilities = require('blink.cmp').get_lsp_capabilities()
     lspconfig.tinymist.setup({
       cmd = { 'tinymist.exe' },
-      offset_encoding = 'utf-8',
+      -- offset_encoding = 'utf-8',
       capabilities = lsp_capabilities,
+      settings = { semanticTokens = "disable" },
     })
     lspconfig.clangd.setup({ capabilities = lsp_capabilities, })
     lspconfig.pyright.setup({ capabilities = lsp_capabilities, })
