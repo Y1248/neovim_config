@@ -1,5 +1,5 @@
 return {
-  'echasnovski/mini.pairs',
+  'windwp/nvim-autopairs',
   lazy = true,
   event = { 'InsertEnter' },
   opts = {}
