@@ -20,7 +20,7 @@ return {
     end
   },
   --]]
-  ---[[
+  --[[
   { -- typst support for neovim
     'kaarmu/typst.vim',
     ft = 'typst',
