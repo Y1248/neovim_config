@@ -56,8 +56,8 @@ return {
     },
     keys = {
       { '<leader>ng', '<CMD>Neogit<CR>', desc = 'Open neogit' },
-      -- { '<leader>dn', '<CMD>Neogit<CR>', desc = 'Open neogit' },
-      -- { '<leader>df', '<CMD>DiffviewOpen<CR>', desc = 'Open diffview' },
+      { '<leader>dfo', '<CMD>DiffviewOpen<CR>', desc = 'Open diffview' },
+      { '<leader>dfc', '<CMD>DiffviewClose<CR>', desc = 'Close diffview' },
       -- { '<leader>dh', '<CMD>DiffviewFileHistory<CR>', desc = 'Open git history' },
     },
     cmd = { 'Neogit', 'NeogitCommit', 'DiffviewOpen' },
