@@ -5,7 +5,7 @@ return {
     local lualine = require('lualine')
     lualine.setup {
       options = {
-        icons_enabled = false,
+        icons_enabled = true,
         component_separators = { left = '', right = ''},
         section_separators = { left = '', right = ''},
         disabled_filetypes = {
@@ -58,7 +58,7 @@ return {
             update_in_insert = false, -- Update diagnostics in insert mode.
             always_visible = false,   -- Show diagnostics even if there are none.
             -- fmt = function(res) return res .. ' ' end,
-            padding = 1,
+            padding = {left = 1, right = 0},
           }
         },
         lualine_c = { { 'filename', padding = 1 } },
@@ -68,9 +68,10 @@ return {
           --   function() return vim.api.nvim_get_option_value("tabstop", {}) .. '>' end,
           --   padding = 0,
           -- },
-          { 'encoding', padding = 1 },
+          { 'encoding', padding = {left = 0, right = 1} },
+          { 'filetype', icon_only = true, padding = 0 },
         },
-        lualine_y = { { 'filetype', padding = 1 }, },
+        lualine_y = { },
         lualine_z = { { 'progress', padding = 0 } },
       },
       inactive_sections = {
