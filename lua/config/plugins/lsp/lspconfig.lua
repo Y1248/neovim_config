@@ -30,7 +30,7 @@ return {
       capabilities = lsp_capabilities,
       -- settings = { semanticTokens = "disable" },
     })
-    lspconfig.clangd.setup({ capabilities = lsp_capabilities, })
+    -- lspconfig.clangd.setup({ capabilities = lsp_capabilities, })
     lspconfig.pyright.setup({ capabilities = lsp_capabilities, })
     -- lspconfig.matlab_ls.setup({
     --   capabilities = lsp_capabilities,
