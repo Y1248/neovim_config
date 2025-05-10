@@ -31,7 +31,8 @@ return {
           }
         },
         lualine_b = {
-          { 'branch', icon = '', padding = 1 },
+          -- Icon for git: 
+          { 'branch', icon = '', padding = 1 },
           { 'diff', padding = 0 },
           {
             'diagnostics',
