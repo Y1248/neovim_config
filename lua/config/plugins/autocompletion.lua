@@ -116,16 +116,22 @@ return {
     opts = {
       keymap = {
         preset = 'enter',
-        ['<C-d>'] = { 'show', 'hide', 'show_documentation', 'hide_documentation' },
-        ['<Up>'] = { 'snippet_backward', 'fallback' },
-        ['<Down>'] = { 'snippet_forward', 'fallback' },
-        ['<Tab>'] = { 'select_next', 'fallback' },
-        ['<S-Tab>'] = { 'select_prev', 'fallback' },
+        -- ['<C-d>'] = { 'show', 'hide', 'show_documentation', 'hide_documentation' },
+        -- ['<Up>'] = { 'snippet_backward', 'fallback' },
+        -- ['<Down>'] = { 'snippet_forward', 'fallback' },
+        -- ['<Tab>'] = { 'select_next', 'fallback' },
+        -- ['<S-Tab>'] = { 'select_prev', 'fallback' },
+      },
+      cmdline = {
+        completion = {
+          menu = { auto_show = false },
+        }
       },
       completion = {
         accept = { auto_brackets = { enabled = false }, },
         list = {
-          selection = { preselect = function(ctx) return ctx.mode ~= 'cmdline' end }
+          -- selection = { preselect = function(ctx) return ctx.mode ~= 'cmdline' end },
+          selection = { preselect = true, auto_insert = true },
         },
         menu = { auto_show = true, },
       },
