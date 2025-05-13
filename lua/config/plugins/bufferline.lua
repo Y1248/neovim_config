@@ -1,4 +1,5 @@
 return {
+  --[[
   'akinsho/bufferline.nvim',
   event = { 'VeryLazy' },
   after = 'catppuccin',
@@ -43,4 +44,5 @@ return {
     keymap.set('n', '<leader>br', '<cmd>BufferLineCloseRight<CR>', { silent = true })
     keymap.set('n', '<leader>bl', '<cmd>BufferLineCloseLeft<CR>', { silent = true })
   end
+  --]]
 }
