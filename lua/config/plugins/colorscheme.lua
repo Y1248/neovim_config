@@ -52,6 +52,13 @@ return {
             text = '#111111',
           }
         },
+        highlight_overrides = {
+          latte = function(latte)
+            return {
+              CurSearch = { bg = '#4772FF' },
+            }
+          end,
+        }
       })
       -- vim.opt.background = 'light'
       vim.cmd('colorscheme catppuccin')
