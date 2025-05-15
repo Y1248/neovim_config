@@ -34,19 +34,20 @@ return {
       keymap.set(
         "n",
         "<A-" .. tostring(i) .. ">",
-        "<Cmd>BufferLineGoToBuffer " .. tostring(i) .. "<cr>",
+        "<Cmd>BufferLineGoToBuffer " .. tostring(i) .. "<CR>",
         { silent = true }
       )
     end
-    keymap.set("n", "<A-0>", "<cmd>BufferLineGoToBuffer -1<cr>", { silent = true })
-    keymap.set("n", "<A-l>", "<cmd>BufferLineCycleNext<cr>", { silent = true })
-    keymap.set("n", "<A-h>", "<cmd>BufferLineCyclePrev<cr>", { silent = true })
-    keymap.set("n", "<A-H>", "<cmd>BufferLineMovePrev<CR>", { silent = true })
-    keymap.set("n", "<A-L>", "<cmd>BufferLineMoveNext<CR>", { silent = true })
-    keymap.set('n', '<A-d>', '<cmd>bdelete!<CR>', { silent = true })
-    keymap.set('n', '<A-o>', '<cmd>BufferLineCloseOthers<CR>', { silent = true })
-    keymap.set('n', '<leader>br', '<cmd>BufferLineCloseRight<CR>', { silent = true })
-    keymap.set('n', '<leader>bl', '<cmd>BufferLineCloseLeft<CR>', { silent = true })
+    keymap.set("n", "<A-0>", "<CMD>BufferLineGoToBuffer -1<CR>", { silent = true })
+    keymap.set("n", "<A-l>", "<CMD>BufferLineCycleNext<CR>", { silent = true })
+    keymap.set("n", "<A-h>", "<CMD>BufferLineCyclePrev<CR>", { silent = true })
+    keymap.set("n", "<A-H>", "<CMD>BufferLineMovePrev<CR>", { silent = true })
+    keymap.set("n", "<A-L>", "<CMD>BufferLineMoveNext<CR>", { silent = true })
+    keymap.set('n', '<A-d>', '<CMD>bdelete!<CR>', { silent = true })
+    keymap.set('n', '<leader>q', '<CMD>bdelete!<CR>', { silent = true })
+    keymap.set('n', '<A-o>', '<CMD>BufferLineCloseOthers<CR>', { silent = true })
+    keymap.set('n', '<leader>br', '<CMD>BufferLineCloseRight<CR>', { silent = true })
+    keymap.set('n', '<leader>bl', '<CMD>BufferLineCloseLeft<CR>', { silent = true })
   end
   --]]
 }
