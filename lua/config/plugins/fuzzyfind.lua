@@ -38,7 +38,7 @@ return {
        { 'gR', function() require('mini.extra').pickers.lsp({scope = 'references'}) end, desc = 'Find lsp references' },
        { 'gd', function() require('mini.extra').pickers.lsp({scope = 'definition'}) end, desc = 'Find lsp definition' },
        { 'gD', function() require('mini.extra').pickers.lsp({scope = 'declaration'}) end, desc = 'Find lsp declaration' },
-       { 'gk', function() require('mini.extra').pickers.lsp({scope = 'implementation'}) end, desc = 'Find lsp implementations' },
+       { 'gK', function() require('mini.extra').pickers.lsp({scope = 'implementation'}) end, desc = 'Find lsp implementations' },
        { 'gt', function() require('mini.extra').pickers.lsp({scope = 'type_definition'}) end, desc = 'Find lsp type_definition' },
        { '<leader>D', function() require('mini.extra').gen_ai_spec.diagnostic() end, desc = 'Find lsp diagnostics' },
      },
