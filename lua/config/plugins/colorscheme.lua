@@ -55,7 +55,7 @@ return {
         highlight_overrides = {
           latte = function(latte)
             return {
-              CurSearch = { bg = '#4772FF' },
+              CurSearch = { bg = '#1E66F5' },
             }
           end,
         }
