@@ -130,8 +130,8 @@ return {
       completion = {
         accept = { auto_brackets = { enabled = false }, },
         list = {
-          -- selection = { preselect = function(ctx) return ctx.mode ~= 'cmdline' end },
-          selection = { preselect = true, auto_insert = true },
+          selection = { preselect = function(ctx) return ctx.mode ~= 'cmdline' end },
+          -- selection = { preselect = true, auto_insert = true },
         },
         menu = { auto_show = true, },
       },
