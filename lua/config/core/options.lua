@@ -9,6 +9,7 @@ vim.g.python_recommended_style = 0 -- Setting indent size to 2 for python files
 vim.opt.clipboard:append('unnamedplus') -- use system clipboard as default register
 
 -- vim.cmd("cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'")
+vim.diagnostic.config({ virtual_text = true, })
 
 local options = {
   -- APPEARENCE about
