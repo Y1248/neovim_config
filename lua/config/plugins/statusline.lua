@@ -1,3 +1,9 @@
+local function location_function()
+  local line = vim.fn.line('.')
+  local col = vim.fn.virtcol('.')
+  return string.format('%d,%d', line, col)
+end
+
 return {
   'nvim-lualine/lualine.nvim',
   event = { 'VeryLazy' },
@@ -5,7 +11,7 @@ return {
     local lualine = require('lualine')
     lualine.setup {
       options = {
-        icons_enabled = true,
+        icons_enabled = false,
         component_separators = { left = '', right = ''},
         section_separators = { left = '', right = ''},
         disabled_filetypes = {
@@ -69,11 +75,11 @@ return {
           --   function() return vim.api.nvim_get_option_value("tabstop", {}) .. '>' end,
           --   padding = 0,
           -- },
-          { 'encoding', padding = {left = 0, right = 1} },
-          { 'filetype', icon_only = true, padding = 0 },
+          -- { 'encoding', padding = {left = 0, right = 1} },
+          -- { 'filetype', icon_only = true, padding = 0 },
         },
         lualine_y = { },
-        lualine_z = { { 'progress', padding = 0 } },
+        lualine_z = { { 'filetype', padding = 0 } },
       },
       inactive_sections = {
         lualine_a = {},
