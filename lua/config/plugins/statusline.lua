@@ -68,7 +68,7 @@ return {
             padding = {left = 1, right = 0},
           }
         },
-        lualine_c = { { 'filename', padding = 1 } },
+        lualine_c = { { 'filename', path = 1, padding = 1 } },
         -- lualine_x = {'encoding', 'fileformat', 'filetype'},
         lualine_x = {
           -- {
