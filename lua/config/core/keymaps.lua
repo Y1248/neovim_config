@@ -2,6 +2,8 @@ vim.g.mapleader = ','
 local keymap = vim.keymap
 
 keymap.set('n', '<leader>w', '<cmd>w<CR>', { silent = true })
+keymap.set({ 'n', 'v' }, '0', '^', { silent = true })
+keymap.set({ 'n', 'v' }, '^', '0', { silent = true })
 
 -- Buffers Management (`<leader>b` prefix)
 keymap.set('n', '<leader>bb', ':buffers<CR>:b<SPACE>', { silent = true })
