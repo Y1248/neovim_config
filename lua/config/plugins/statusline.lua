@@ -75,7 +75,7 @@ return {
           --   function() return vim.api.nvim_get_option_value("tabstop", {}) .. '>' end,
           --   padding = 0,
           -- },
-          -- { 'encoding', padding = {left = 0, right = 1} },
+          { 'encoding', padding = {left = 0, right = 1} },
           -- { 'filetype', icon_only = true, padding = 0 },
         },
         lualine_y = { },
