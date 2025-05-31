@@ -1,5 +1,5 @@
 if vim.g.vscode then
-  require('vsc')
+  -- require('vsc')
 else
   require('config.core')
   require('config.lazynvim')
