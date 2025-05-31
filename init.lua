@@ -1,7 +1,8 @@
 if vim.g.vscode then
-  -- vscode about configuration
+  -- VSCode about configuration
   require('vsc')
 else
+  -- NeoVIM about configuration
   require('config.core')
   require('config.lazynvim')
 end
