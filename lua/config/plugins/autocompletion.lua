@@ -130,7 +130,7 @@ return {
         },
       },
       completion = {
-        keyword = { range = 'full' },
+        keyword = { range = 'prefix' },
         accept = { auto_brackets = { enabled = false }, },
         list = { selection = { preselect = true, auto_insert = true }, },
         menu = {
