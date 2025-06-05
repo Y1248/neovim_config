@@ -1,5 +1,5 @@
 return {
-  ---[[
+  --[[
   {
     'hrsh7th/nvim-cmp',
     lazy = true,
@@ -107,12 +107,13 @@ return {
     end
   },
   --]]
+  ---[[
   {
     'saghen/blink.cmp',
     lazy = true,
     event = { 'InsertEnter' },
     dependencies = 'rafamadriz/friendly-snippets',
-    version = "*",
+    version = "1.*",
     opts = {
       keymap = {
         preset = 'enter',
@@ -125,32 +126,32 @@ return {
       cmdline = {
         completion = {
           menu = { auto_show = false },
-        }
+          list = { selection = { preselect = false, auto_insert = true }, },
+        },
       },
       completion = {
+        keyword = { range = 'full' },
         accept = { auto_brackets = { enabled = false }, },
-        list = {
-          selection = { preselect = function(ctx) return ctx.mode ~= 'cmdline' end },
-          -- selection = { preselect = true, auto_insert = true },
+        list = { selection = { preselect = true, auto_insert = true }, },
+        menu = {
+          auto_show = true,
+          draw = { padding = 0 },
         },
-        menu = { auto_show = true, },
       },
-      -- fuzzy = {
-      --   prebuilt_binaries = {
-      --     download = false,
-      --     ignore_version_mismatch = true,
-      --   },
-      --   implementation = 'lua',
-      -- },
+      fuzzy = {
+        prebuilt_binaries = {
+          download = true,
+          ignore_version_mismatch = true,
+        },
+        sorts = { 'exact', 'score', 'sort_text' }
+        -- implementation = 'lua',
+      },
       signature = { enabled = true, },
-      appearance = {
-        use_nvim_cmp_as_default = true,
-        nerd_font_variant = 'mono'
-      },
       sources = {
-        default = { 'lsp', 'path', 'snippets', 'buffer' },
+        default = { 'lsp', 'path', 'buffer' },
       },
     },
     opts_extend = { "sources.default" }
   }
+  --]]
 }

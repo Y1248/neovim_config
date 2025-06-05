@@ -43,7 +43,8 @@ return {
         },
         integrations = {
           diffview = true,
-          -- blink_cmp = true,
+          blink_cmp = true,
+          neogit = true,
           -- Bufferline: do the special support in bufferline.lua file
         },
         color_overrides = {
