@@ -3,7 +3,7 @@ return {
   -- cmd = { 'LspStart' },
   event = { 'BufReadPre', 'BufNewFile' },
   dependencies = {
-    { 'saghen/blink.cmp' },
+    -- { 'saghen/blink.cmp' },
     { 'williamboman/mason.nvim', }
   },
   config = function()
@@ -23,7 +23,8 @@ return {
     keymap.set('n', 'K', vim.lsp.buf.hover, opts) -- show documentation for what is under cursor
     keymap.set('n', '<leader>rs', ':LspRestart<CR>', opts) -- mapping to restart lsp if necessary
 
-    local lsp_capabilities = require('blink.cmp').get_lsp_capabilities()
+    local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
+    -- local lsp_capabilities = require('blink.cmp').get_lsp_capabilities()
     lspconfig.tinymist.setup({
       -- cmd = { 'tinymist.exe' },
       -- offset_encoding = 'utf-8',
