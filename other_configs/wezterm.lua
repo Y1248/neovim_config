@@ -3,6 +3,8 @@ local config = wezterm.config_builder()
 
 -- Appearance
 config.color_scheme = 'Catppuccin Latte' -- 'Vs Code Light+ (Gogh)', 'Dark Pastel'
+-- config.color_scheme = 'Tokyo Night Moon' -- 'Vs Code Light+ (Gogh)', 'Dark Pastel'
+-- config.color_scheme = 'Dark Pastel' -- 'Vs Code Light+ (Gogh)', 'Dark Pastel'
 config.window_decorations = "INTEGRATED_BUTTONS | RESIZE"
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
@@ -16,7 +18,7 @@ config.initial_rows = 36
 config.initial_cols = 100
 config.enable_scroll_bar = false
 config.window_frame = {
-  font = wezterm.font{family = 'MiSans', weight = 'Regular'},
+  -- font = wezterm.font{family = 'MiSans', weight = 'Regular'},
 }
 config.colors = {
   background = '#FFFFFF',
@@ -37,9 +39,10 @@ config.colors = {
 config.default_prog = { 'nu.exe' } -- pwsh.exe
 
 -- Font
-config.line_height = 0.85
+config.line_height = 1.0
 config.font_size = 11
-config.font = wezterm.font('FiraCode Nerd Font', { weight = 'Regular' })
+-- config.font = wezterm.font('Inconsolata Nerd Font', { weight = 'Regular' })
+config.font = wezterm.font('Lucida Console', { weight = 'Regular' })
 -- config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0'} -- Disable font ligatures
 -- Keys
 config.keys = {

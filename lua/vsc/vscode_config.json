@@ -13,11 +13,12 @@ Add the following content to `settings.json`:
     "breakpointHighlight.backgroundColor": "#F6A6A6",
 
     // Font
-    "editor.fontFamily": "FiraCode Nerd Font, Consolas, HarmonyOS Sans SC",
-    "editor.lineHeight": 1.15,
+    "editor.fontFamily": "Lucida Console, Consolas, HarmonyOS Sans SC",
+    "editor.lineHeight": 1.0,
     "editor.fontLigatures": true,
-    // "editor.fontSize": 16,
+    "editor.fontSize": 15,
     // "editor.fontWeight": "500",
+    "terminal.integrated.fontSize": 15,
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -59,6 +60,7 @@ Add the following content to `settings.json`:
     "editor.tabSize": 2,
     "workbench.activityBar.location": "top",
     "python.analysis.typeCheckingMode": "standard",
+    "chat.commandCenter.enabled": false,
 }
  ```
  
