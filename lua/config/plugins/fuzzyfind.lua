@@ -23,6 +23,7 @@ return {
     end
   },
   --]]
+  --[[
   {
      'echasnovski/mini.pick',
      cmd = { 'Pick' },
@@ -52,4 +53,28 @@ return {
        require('mini.extra').setup({})
      end
    },
+   --]]
+   {
+     "ibhagwan/fzf-lua",
+     dependencies = { "nvim-tree/nvim-web-devicons" },
+     keys = {
+       { '<C-p>', '<CMD>FzfLua files<CR>', desc = 'Fuzzy find files' },
+       { '<leader>ff', '<CMD>FzfLua files<CR>', desc = 'Fuzzy find files' },
+       { '<leader>fs', '<CMD>FzfLua live_grep<CR>', desc = 'Fuzzy find files' },
+       { '<leader>fb', '<CMD>FzfLua buffers<CR>', desc = 'Fuzzy find files' },
+       { '<leader>fr', '<CMD>FzfLua resume<CR>', desc = 'Fuzzy find files' },
+     },
+     config = function()
+       require('fzf-lua').setup({
+         winopts = {
+           split = "belowright new",
+           preview = {
+             hidden = true,
+             border = "none",
+             layout = "horizontal",
+           },
+         },
+       })
+     end
+   }
 }
