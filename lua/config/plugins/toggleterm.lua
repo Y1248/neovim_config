@@ -1,4 +1,5 @@
 return {
+  --[[
   'akinsho/toggleterm.nvim',
   keys = {
     { '<leader>tt', '<CMD>ToggleTerm<CR>', { silent = true } },
@@ -10,9 +11,10 @@ return {
   },
   config = function()
     require('toggleterm').setup({
-      open_mapping = [[<c-\>]],
+      open_mapping = [<c-\>],
       shell = 'nu.exe',
     })
-    vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], { silent = true })
+    vim.keymap.set('t', '<esc>', [<C-\><C-n>], { silent = true })
   end
+  --]]
 }
