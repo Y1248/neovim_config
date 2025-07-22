@@ -11,6 +11,11 @@ vim.opt.clipboard:append('unnamedplus') -- use system clipboard as default regis
 -- vim.cmd("cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'")
 vim.diagnostic.config({ virtual_text = true, })
 
+local sysname = vim.uv.os_uname().sysname
+if sysname == "Windows_NT" then
+  vim.opt.shell = "nu.exe"
+end
+
 local options = {
   -- APPEARENCE about
   fileencoding = 'utf-8',
