@@ -1,4 +1,4 @@
-vim.g.mapleader = ' '
+vim.g.mapleader = ','
 local keymap = vim.keymap
 
 keymap.set('n', '<leader>w', '<cmd>w<CR>', { silent = true })
