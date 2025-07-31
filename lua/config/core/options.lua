@@ -35,7 +35,7 @@ local options = {
   showmode = false,
   splitbelow = true,
   splitright = true,
-  colorcolumn = '80',
+  -- colorcolumn = '80',
   -- guicursor = 'n-v-i-c:block-Cursor',
 
   -- INDENT about
