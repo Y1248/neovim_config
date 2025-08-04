@@ -1,4 +1,5 @@
 return {
+  -- NOTE: Now I use snacks.terminal(at snacks.nvim file)
   --[[
   'akinsho/toggleterm.nvim',
   keys = {

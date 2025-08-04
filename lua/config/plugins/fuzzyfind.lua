@@ -1,4 +1,5 @@
 return {
+  -- NOTE: Now I use snacks.picker(at snacks.nvim file)
   --[[
   {
     'nvim-telescope/telescope.nvim',
