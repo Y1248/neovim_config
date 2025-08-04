@@ -141,7 +141,7 @@ return {
       fuzzy = {
         prebuilt_binaries = {
           download = true,
-          ignore_version_mismatch = true,
+          -- ignore_version_mismatch = true,
         },
         sorts = { 'exact', 'score', 'sort_text' }
         -- implementation = 'lua',
