@@ -1,5 +1,9 @@
 return {
   'neovim/nvim-lspconfig',
+  keys = {
+    { '<leader>lp', '<CMD>LspStart pyright<CR>', desc = 'Start pyright LSP' },
+    { '<leader>lc', '<CMD>LspStart clangd<CR>', desc = 'Start clangd LSP' },
+  },
   cmd = { 'LspStart' },
   -- event = { 'BufReadPre', 'BufNewFile' },
   dependencies = {
